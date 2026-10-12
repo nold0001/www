@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-label="PCS 장비에 탑재되는 컨트롤러 보드">
+  <rect width="400" height="220" fill="#fdf5e6"/>
+  <rect x="40" y="30" width="150" height="170" rx="8" fill="#fff" stroke="#e3cfa6" stroke-width="2"/>
+  <rect x="54" y="44" width="122" height="54" rx="4" fill="#0b1626"/>
+  <path d="M62 76 l14 -14 14 18 14 -10 14 8 14 -6 14 2 12 -6" fill="none" stroke="#f5a524" stroke-width="2.5"/>
+  <g fill="#f0e3c8"><rect x="54" y="112" width="122" height="10" rx="3"/><rect x="54" y="130" width="122" height="10" rx="3"/><rect x="54" y="148" width="122" height="10" rx="3"/></g>
+  <circle cx="68" cy="180" r="6" fill="#22b37a"/><circle cx="88" cy="180" r="6" fill="#22b37a"/>
+  <path d="M190 115 H232" stroke="#c47f00" stroke-width="3" stroke-dasharray="6 5"/>
+  <g>
+    <rect x="232" y="60" width="130" height="110" rx="10" fill="#1a6b3c"/>
+    <rect x="232" y="60" width="130" height="110" rx="10" fill="#0e3d26" opacity=".25"/>
+    <rect x="270" y="90" width="54" height="50" rx="4" fill="#0b1626"/>
+    <text x="297" y="120" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="13" font-weight="800" fill="#f5a524">tems</text>
+    <g fill="#d4b26a">
+      <rect x="276" y="80" width="4" height="10"/><rect x="288" y="80" width="4" height="10"/><rect x="300" y="80" width="4" height="10"/><rect x="312" y="80" width="4" height="10"/>
+      <rect x="276" y="140" width="4" height="10"/><rect x="288" y="140" width="4" height="10"/><rect x="300" y="140" width="4" height="10"/><rect x="312" y="140" width="4" height="10"/>
+      <rect x="260" y="100" width="10" height="4"/><rect x="260" y="112" width="10" height="4"/><rect x="260" y="124" width="10" height="4"/>
+      <rect x="324" y="100" width="10" height="4"/><rect x="324" y="112" width="10" height="4"/><rect x="324" y="124" width="10" height="4"/>
+    </g>
+    <g fill="#9fd6b4"><rect x="244" y="72" width="16" height="8" rx="2"/><rect x="336" y="150" width="16" height="8" rx="2"/><circle cx="350" cy="76" r="4"/><circle cx="246" cy="156" r="4"/></g>
+    <text x="297" y="190" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="12" font-weight="700" fill="#8a6a2a">ARM64</text>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="태양광, ESS, PCS 설비가 tems 컨트롤러와 tOps 운영 화면에 연결된 현장 그림">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf2fd"/><stop offset="1" stop-color="#f7faff"/></linearGradient>
+    <linearGradient id="pv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b5ea8"/><stop offset="1" stop-color="#173c73"/></linearGradient>
+    <linearGradient id="cont" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e3eaf4"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#d6e3f5" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1200" height="560" fill="url(#sky)"/>
+  <rect width="1200" height="560" fill="url(#grid)" opacity=".55"/>
+  <circle cx="1080" cy="92" r="44" fill="#f5a524" opacity=".9"/>
+  <circle cx="1080" cy="92" r="70" fill="#f5a524" opacity=".12"/>
+  <rect x="0" y="430" width="1200" height="130" fill="#dbe6f4"/>
+  <rect x="0" y="430" width="1200" height="4" fill="#c4d4ea"/>
+
+  <!-- 신호선 -->
+  <g fill="none" stroke="#2f78e0" stroke-width="3" stroke-dasharray="8 7" stroke-linecap="round">
+    <path d="M250 330 V380 H520"/>
+    <path d="M470 300 V380"/>
+    <path d="M700 330 V380 H520"/>
+    <path d="M520 380 V408 H860"/>
+  </g>
+  <g fill="#2f78e0"><circle cx="520" cy="380" r="7"/><circle cx="860" cy="408" r="7"/></g>
+
+  <!-- 태양광 -->
+  <g>
+    <polygon points="70,330 120,210 340,210 290,330" fill="url(#pv)"/>
+    <g stroke="#6ca5f2" stroke-width="2" opacity=".7">
+      <line x1="125" y1="330" x2="171" y2="210"/><line x1="180" y1="330" x2="222" y2="210"/><line x1="235" y1="330" x2="273" y2="210"/>
+      <line x1="95" y1="270" x2="315" y2="270"/>
+    </g>
+    <rect x="170" y="330" width="12" height="100" fill="#8aa0bd"/>
+    <rect x="130" y="424" width="92" height="8" rx="3" fill="#8aa0bd"/>
+    <text x="205" y="460" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="18" font-weight="700" fill="#4a5a70">태양광</text>
+  </g>
+
+  <!-- ESS 컨테이너 -->
+  <g>
+    <rect x="360" y="200" width="250" height="130" rx="8" fill="url(#cont)" stroke="#b9c9de" stroke-width="2"/>
+    <g fill="#2f78e0">
+      <rect x="380" y="222" width="34" height="88" rx="4" opacity=".9"/><rect x="424" y="222" width="34" height="88" rx="4" opacity=".75"/>
+      <rect x="468" y="222" width="34" height="88" rx="4" opacity=".9"/><rect x="512" y="222" width="34" height="88" rx="4" opacity=".75"/>
+      <rect x="556" y="222" width="34" height="88" rx="4" opacity=".9"/>
+    </g>
+    <g fill="#ffffff" opacity=".8">
+      <rect x="388" y="232" width="18" height="6" rx="2"/><rect x="432" y="232" width="18" height="6" rx="2"/><rect x="476" y="232" width="18" height="6" rx="2"/><rect x="520" y="232" width="18" height="6" rx="2"/><rect x="564" y="232" width="18" height="6" rx="2"/>
+    </g>
+    <rect x="360" y="330" width="250" height="100" fill="#c9d7ea"/>
+    <rect x="360" y="330" width="250" height="100" fill="url(#grid)" opacity=".5"/>
+    <text x="485" y="460" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="18" font-weight="700" fill="#4a5a70">ESS · 배터리</text>
+  </g>
+
+  <!-- PCS 캐비닛 -->
+  <g>
+    <rect x="640" y="190" width="120" height="240" rx="8" fill="#ffffff" stroke="#b9c9de" stroke-width="2"/>
+    <rect x="656" y="208" width="88" height="54" rx="4" fill="#0b1626"/>
+    <path d="M664 240 l10 -12 10 16 10 -10 10 8 10 -6 10 4" fill="none" stroke="#6ca5f2" stroke-width="2.5"/>
+    <g fill="#d6e1ef"><rect x="656" y="276" width="88" height="10" rx="3"/><rect x="656" y="294" width="88" height="10" rx="3"/><rect x="656" y="312" width="88" height="10" rx="3"/><rect x="656" y="330" width="88" height="10" rx="3"/></g>
+    <circle cx="672" cy="370" r="6" fill="#22b37a"/><circle cx="692" cy="370" r="6" fill="#f5a524"/>
+    <text x="700" y="460" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="18" font-weight="700" fill="#4a5a70">PCS</text>
+  </g>
+
+  <!-- tems 컨트롤러 -->
+  <g>
+    <rect x="800" y="330" width="120" height="78" rx="10" fill="#0b1626"/>
+    <rect x="814" y="344" width="92" height="10" rx="3" fill="#f5a524"/>
+    <g fill="#3a4d68"><rect x="814" y="364" width="20" height="8" rx="2"/><rect x="840" y="364" width="20" height="8" rx="2"/><rect x="866" y="364" width="20" height="8" rx="2"/></g>
+    <circle cx="820" cy="392" r="4" fill="#22b37a"/><circle cx="834" cy="392" r="4" fill="#22b37a"/>
+    <text x="860" y="460" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="18" font-weight="800" fill="#c47f00">tems</text>
+  </g>
+
+  <!-- 무선/원격 -->
+  <g fill="none" stroke="#2f78e0" stroke-width="3" stroke-linecap="round">
+    <path d="M940 330 q22 -22 0 -44" opacity=".9"/><path d="M956 344 q40 -40 0 -80" opacity=".6"/><path d="M972 358 q58 -58 0 -116" opacity=".35"/>
+  </g>
+
+  <!-- tOps 노트북 -->
+  <g>
+    <rect x="990" y="250" width="180" height="120" rx="8" fill="#0b1626"/>
+    <rect x="1000" y="260" width="160" height="100" rx="3" fill="#eef3f9"/>
+    <rect x="1000" y="260" width="160" height="14" fill="#dfe7f1"/>
+    <g><rect x="1008" y="282" width="34" height="20" rx="3" fill="#fff"/><rect x="1046" y="282" width="34" height="20" rx="3" fill="#fff"/><rect x="1084" y="282" width="34" height="20" rx="3" fill="#fff"/><rect x="1122" y="282" width="30" height="20" rx="3" fill="#fff"/></g>
+    <rect x="1014" y="290" width="14" height="6" rx="2" fill="#22b37a"/><rect x="1052" y="290" width="14" height="6" rx="2" fill="#22b37a"/><rect x="1090" y="290" width="14" height="6" rx="2" fill="#f5a524"/><rect x="1128" y="290" width="14" height="6" rx="2" fill="#e5484d"/>
+    <rect x="1008" y="308" width="144" height="44" rx="3" fill="#fff"/>
+    <path d="M1012 344 l14 -6 14 4 14 -12 14 6 14 -14 14 8 14 -6 14 2 14 -8" fill="none" stroke="#2f78e0" stroke-width="2"/>
+    <path d="M970 370 h220 l-14 14 h-192 z" fill="#2a3a52"/>
+    <text x="1080" y="460" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="18" font-weight="800" fill="#2361bd">tOps</text>
+  </g>
+</svg>

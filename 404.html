@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>페이지를 찾을 수 없습니다 | 브론토</title>
+<meta name="robots" content="noindex">
+<script>
+  // 404 는 어느 깊이의 주소에서도 열리므로 기준 경로를 고정한다.
+  // 도메인 연결 전 GitHub Pages 주소(<계정>.github.io/<저장소>/)에서도 깨지지 않게 저장소 경로를 붙인다.
+  document.write('<base href="' + (location.hostname.endsWith('github.io') ? '/' + location.pathname.split('/')[1] + '/' : '/') + '">');
+</script>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="브론토 홈"><img src="assets/logo.png" alt="bronto"></a>
+  </div>
+</header>
+<main class="hero" style="min-height:70vh;display:grid;align-items:center">
+  <div class="wrap" style="display:block">
+    <span class="eyebrow">404</span>
+    <h1>페이지를 찾을 수 없습니다</h1>
+    <p class="lead">주소가 바뀌었거나 없는 페이지입니다. 아래에서 원하시는 곳으로 이동해 주세요.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="./">홈으로</a>
+      <a class="btn btn-ghost" href="tems/">tems</a>
+      <a class="btn btn-ghost" href="tops/">tOps</a>
+      <a class="btn btn-ghost" href="contact/">도입 문의</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>

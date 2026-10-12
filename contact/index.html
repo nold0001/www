@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>도입 문의 · 데모 요청 | 브론토</title>
+<meta name="description" content="tems, tOps 도입 상담과 데모 요청, 기술 문의를 받습니다. contact@bronto.co.kr">
+<meta property="og:title" content="도입 문의 · 데모 요청 | 브론토">
+<meta property="og:url" content="https://www.bronto.co.kr/contact/">
+<meta property="og:image" content="https://www.bronto.co.kr/assets/og-image.png">
+<meta property="og:site_name" content="브론토 bronto">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.bronto.co.kr/contact/">
+<meta name="theme-color" content="#0b1626">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="브론토 홈"><img src="../assets/logo.png" alt="bronto"></a>
+    <button class="menu-btn" aria-label="메뉴" aria-expanded="false" aria-controls="nav">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="../tems/">tems</a>
+      <a href="../tops/">tOps</a>
+      <a href="../#solutions">적용 분야</a>
+      <a href="../#packages">도입 구성</a>
+      <a class="btn btn-primary" href="../contact/" aria-current="page">도입 문의</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero hero-sub" style="padding-bottom:48px">
+  <div class="wrap" style="display:block">
+    <span class="eyebrow">CONTACT</span>
+    <h1>도입 문의 · 데모 요청</h1>
+    <p class="lead" style="margin-bottom:0">현장 규모와 연동 장비, 운영 방식을 알려주시면 맞는 구성을 제안해 드립니다.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid" style="gap:48px;grid-template-columns:minmax(0,1fr)">
+      <div class="grid" style="gap:48px" id="contact-grid">
+        <form class="form" id="contact-form" novalidate>
+          <div>
+            <label for="type">문의 유형 <span class="req">*</span></label>
+            <select id="type" name="type" required>
+              <option>도입 상담</option>
+              <option>데모 요청</option>
+              <option>기술 문의</option>
+              <option>기타</option>
+            </select>
+          </div>
+          <div>
+            <label>관심 제품</label>
+            <div class="checks-inline">
+              <label><input type="checkbox" name="product" value="tems"> tems</label>
+              <label><input type="checkbox" name="product" value="tOps"> tOps</label>
+            </div>
+          </div>
+          <div class="row2">
+            <div>
+              <label for="company">회사명 <span class="req">*</span></label>
+              <input id="company" name="company" required autocomplete="organization">
+            </div>
+            <div>
+              <label for="name">담당자 <span class="req">*</span></label>
+              <input id="name" name="name" required autocomplete="name">
+            </div>
+          </div>
+          <div class="row2">
+            <div>
+              <label for="phone">연락처</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div>
+              <label for="email">이메일 <span class="req">*</span></label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+          </div>
+          <div>
+            <label for="message">문의 내용 <span class="req">*</span></label>
+            <textarea id="message" name="message" required placeholder="예) ESS 2개 사이트, PCS 4대 연동 예정입니다. 원격 운영까지 포함한 구성을 검토하고 있습니다."></textarea>
+          </div>
+          <div>
+            <input type="checkbox" name="botcheck" id="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn-primary" type="submit">문의 보내기</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+            <p class="note" style="margin-top:12px">입력하신 정보는 문의 답변에만 사용합니다.</p>
+          </div>
+        </form>
+
+        <aside class="contact-side">
+          <div class="card">
+            <h3>연락처</h3>
+            <div class="item">
+              <div class="ico" style="margin:0;flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div>
+              <div><b>이메일</b><span><a href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a></span></div>
+            </div>
+            <div class="item">
+              <div class="ico" style="margin:0;flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+              <div><b>답변</b><span>영업일 기준으로 담당자가 직접 연락드립니다.</span></div>
+            </div>
+            <div class="item">
+              <div class="ico" style="margin:0;flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div>
+              <div><b>알려주시면 좋은 내용</b><span>현장 수, 연동 장비(PCS · BMS · 계측기), 현재 운영 방식, 희망 일정</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="../"><img src="../assets/logo.png" alt="bronto"></a>
+        <p>브론토는 에너지 설비 제어 엔진 tems와 원격 운영 도구 tOps를 개발합니다.</p>
+      </div>
+      <div>
+        <h4>제품</h4>
+        <ul>
+          <li><a href="../tems/">tems</a></li>
+          <li><a href="../tops/">tOps</a></li>
+          <li><a href="../#packages">도입 구성</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>문의</h4>
+        <ul>
+          <li><a href="../contact/">도입 문의 · 데모 요청</a></li>
+          <li><a href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year">2026</span> 브론토 bronto. All rights reserved.</span>
+      <span>bronto.co.kr</span>
+    </div>
+  </div>
+</footer>
+
+<style>@media (min-width: 900px) { #contact-grid { grid-template-columns: 1.6fr 1fr; align-items: start; } }</style>
+<script src="../assets/config.js"></script>
+<script src="../assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="x64 서버와 ARM64 임베디드 컨트롤러에서 같은 tems 엔진이 동작">
+  <rect width="600" height="340" rx="18" fill="#fdf5e6"/>
+  <g>
+    <rect x="50" y="60" width="200" height="210" rx="10" fill="#0b1626"/>
+    <g><rect x="66" y="78" width="168" height="40" rx="5" fill="#17304f"/><rect x="66" y="126" width="168" height="40" rx="5" fill="#17304f"/><rect x="66" y="174" width="168" height="40" rx="5" fill="#17304f"/></g>
+    <g fill="#22b37a"><circle cx="82" cy="98" r="5"/><circle cx="82" cy="146" r="5"/><circle cx="82" cy="194" r="5"/></g>
+    <g fill="#3a4d68"><rect x="150" y="92" width="70" height="12" rx="3"/><rect x="150" y="140" width="70" height="12" rx="3"/><rect x="150" y="188" width="70" height="12" rx="3"/></g>
+    <rect x="96" y="92" width="46" height="12" rx="3" fill="#f5a524"/>
+    <text x="150" y="250" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="16" font-weight="700" fill="#c9d4e3">x64 서버</text>
+  </g>
+  <g fill="none" stroke="#c47f00" stroke-width="3" stroke-dasharray="7 6"><path d="M250 165 H350"/></g>
+  <g>
+    <rect x="276" y="140" width="48" height="50" rx="10" fill="#fff" stroke="#e3cfa6" stroke-width="2"/>
+    <text x="300" y="171" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="13" font-weight="800" fill="#c47f00">tems</text>
+  </g>
+  <g>
+    <rect x="350" y="90" width="200" height="150" rx="10" fill="#1a6b3c"/>
+    <rect x="420" y="135" width="60" height="60" rx="5" fill="#0b1626"/>
+    <text x="450" y="170" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="12" font-weight="800" fill="#f5a524">ARM64</text>
+    <g fill="#d4b26a">
+      <rect x="428" y="124" width="4" height="11"/><rect x="440" y="124" width="4" height="11"/><rect x="452" y="124" width="4" height="11"/><rect x="464" y="124" width="4" height="11"/>
+      <rect x="428" y="195" width="4" height="11"/><rect x="440" y="195" width="4" height="11"/><rect x="452" y="195" width="4" height="11"/><rect x="464" y="195" width="4" height="11"/>
+    </g>
+    <g fill="#9fd6b4"><rect x="366" y="106" width="30" height="12" rx="2"/><rect x="366" y="124" width="30" height="12" rx="2"/><rect x="504" y="206" width="30" height="16" rx="2"/><circle cx="526" cy="112" r="6"/></g>
+    <text x="450" y="270" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="16" font-weight="700" fill="#8a6a2a">ARM64 임베디드 컨트롤러</text>
+  </g>
+</svg>

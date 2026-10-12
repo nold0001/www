@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="PCS, BMS, 계측기와 Modbus로 통신하는 tems">
+  <rect width="600" height="340" rx="18" fill="#eaf2fd"/>
+  <g font-family="Pretendard, 'Noto Sans KR', sans-serif" font-weight="700" font-size="15" text-anchor="middle">
+    <g><rect x="40" y="40" width="130" height="64" rx="10" fill="#fff" stroke="#b9c9de" stroke-width="2"/><text x="105" y="78" fill="#1d2b3e">PCS</text></g>
+    <g><rect x="40" y="138" width="130" height="64" rx="10" fill="#fff" stroke="#b9c9de" stroke-width="2"/><text x="105" y="176" fill="#1d2b3e">BMS</text></g>
+    <g><rect x="40" y="236" width="130" height="64" rx="10" fill="#fff" stroke="#b9c9de" stroke-width="2"/><text x="105" y="274" fill="#1d2b3e">계측기 · I/O</text></g>
+    <g fill="none" stroke="#2f78e0" stroke-width="3" stroke-dasharray="7 6"><path d="M170 72 H230 V170 H250"/><path d="M170 170 H250"/><path d="M170 268 H230 V170"/></g>
+    <g><rect x="250" y="120" width="120" height="100" rx="12" fill="#0b1626"/><text x="310" y="166" fill="#f5a524" font-size="20" font-weight="800">tems</text><text x="310" y="192" fill="#8ea2bd" font-size="12">Modbus · 시리얼</text></g>
+    <g fill="none" stroke="#2f78e0" stroke-width="3" stroke-dasharray="7 6"><path d="M370 150 H430 V90 H450"/><path d="M370 190 H430 V250 H450"/></g>
+    <g><rect x="450" y="58" width="120" height="64" rx="10" fill="#fff" stroke="#b9c9de" stroke-width="2"/><text x="510" y="96" fill="#1d2b3e">HMI</text></g>
+    <g><rect x="450" y="218" width="120" height="64" rx="10" fill="#fff" stroke="#b9c9de" stroke-width="2"/><text x="510" y="256" fill="#1d2b3e">상위 시스템</text></g>
+  </g>
+</svg>

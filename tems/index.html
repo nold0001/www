@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tems - EMS 서버 플랫폼 · PCS 컨트롤러 엔진 | 브론토</title>
+<meta name="description" content="tems 는 현장 설비와 통신하며 제어하는 EMS 서버 플랫폼이자 PCS 컨트롤러 엔진입니다. 모듈형 프로세스 구조, Modbus 장치 통신, 이벤트·이력·스케줄, x64·ARM64 지원.">
+<meta property="og:title" content="tems - EMS 서버 플랫폼 · PCS 컨트롤러 엔진">
+<meta property="og:url" content="https://www.bronto.co.kr/tems/">
+<meta property="og:image" content="https://www.bronto.co.kr/assets/og-image.png">
+<meta property="og:site_name" content="브론토 bronto">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.bronto.co.kr/tems/">
+<meta name="theme-color" content="#0b1626">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="브론토 홈"><img src="../assets/logo.png" alt="bronto"></a>
+    <button class="menu-btn" aria-label="메뉴" aria-expanded="false" aria-controls="nav">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="../tems/" aria-current="page">tems</a>
+      <a href="../tops/">tOps</a>
+      <a href="../#solutions">적용 분야</a>
+      <a href="../#packages">도입 구성</a>
+      <a class="btn btn-primary" href="../contact/">도입 문의</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero hero-sub">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="color:var(--amber);background:rgba(245,165,36,.12);border-color:rgba(245,165,36,.35)">EMS ENGINE</span>
+      <h1>tems</h1>
+      <p class="lead" style="margin-bottom:12px"><b style="color:#fff">EMS 서버 플랫폼이자 PCS 컨트롤러 엔진.</b><br>현장 장비와 통신하며 설비를 제어하고, 이벤트와 이력을 기록합니다. 필요한 기능만 골라 구성하는 모듈형 구조라 서버에서도, 임베디드 컨트롤러에서도 가볍게 동작합니다.</p>
+      <div class="actions" style="margin-top:28px">
+        <a class="btn btn-primary" href="../contact/?product=tems">tems 도입 문의</a>
+        <a class="btn btn-ghost" href="#features">주요 기능</a>
+      </div>
+    </div>
+    <div>
+      <div class="layers" aria-label="tems 모듈 구조">
+        <div class="layer app">
+          <div class="lh"><b>app · 현장별 기능</b><span>필요한 것만 선택</span></div>
+          <div class="chips"><span class="chip">Modbus 마스터</span><span class="chip">Modbus 슬레이브</span><span class="chip">시계열 DB 적재</span><span class="chip">데이터 정리 · 백업</span><span class="chip">GPIO</span><span class="chip">시뮬레이터</span></div>
+        </div>
+        <div class="layer core">
+          <div class="lh"><b>core · 제어 핵심</b><span>장치 · 데이터 · 이벤트</span></div>
+          <div class="chips"><span class="chip">장치 관리</span><span class="chip">데이터 · 스케줄</span><span class="chip">이벤트 · 알람</span><span class="chip">이력</span><span class="chip">자산</span><span class="chip">HMI 연동</span><span class="chip">시간 동기화</span></div>
+        </div>
+        <div class="layer base">
+          <div class="lh"><b>base · 공통 기반</b><span>모든 프로세스 공통</span></div>
+          <div class="chips"><span class="chip">개체 · 알람 관리</span><span class="chip">메시징</span><span class="chip">타이머</span><span class="chip">노드 상태</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">FEATURES</div>
+      <h2>설비 제어에 필요한 것을 엔진 하나에</h2>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">01</div>
+        <h3>현장 장비와 직접 통신</h3>
+        <p>PCS, BMS, 계측기 같은 현장 장비를 포인트 단위로 연결하고, 상위 시스템에는 다시 장비처럼 데이터를 제공합니다.</p>
+        <ul class="checks">
+          <li>Modbus 마스터 / 슬레이브 (TCP, 시리얼)</li>
+          <li>장치 · 포인트 매핑을 설정 파일로 관리</li>
+          <li>GPIO 등 컨트롤러 입출력 연동</li>
+        </ul>
+      </div>
+      <figure class="figure">
+        <img src="../assets/img/device-comm.svg" alt="PCS, BMS, 계측기와 통신하고 HMI와 상위 시스템에 데이터를 주는 tems 구성도" width="600" height="340" loading="lazy">
+        <figcaption>장비 → tems → 상위 시스템 · 장비에서 읽은 값을 데이터로 정리하고, 제어 명령은 다시 장비로 내려 보냅니다. 같은 데이터를 HMI와 상위 시스템에 함께 제공합니다.</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">02</div>
+        <h3>이벤트 · 이력 · 스케줄</h3>
+        <p>설비에서 일어나는 일을 놓치지 않고 남기고, 정해진 시간표대로 운전합니다.</p>
+        <ul class="checks">
+          <li>이벤트 · 알람 발생과 해제 기록</li>
+          <li>운전 이력 저장, 시계열 DB(PostgreSQL) 고속 적재</li>
+          <li>일 단위 운전 스케줄 · 프로파일</li>
+          <li>오래된 데이터 자동 정리 · 백업</li>
+        </ul>
+      </div>
+      <figure class="figure">
+        <img src="../assets/img/history.svg" alt="일간 충방전 스케줄과 이벤트 발생·해제 이력 예시" width="600" height="340" loading="lazy">
+        <figcaption>기록과 계획을 엔진 안에서 · 별도 시스템을 덧붙이지 않아도 기본적인 기록 · 스케줄 운영이 가능합니다.</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">03</div>
+        <h3>모듈형 프로세스 구조</h3>
+        <p>기능마다 독립된 프로세스로 동작합니다. 현장에 필요한 기능만 켜고, 한 기능의 문제가 전체 설비 제어로 번지지 않도록 설계했습니다.</p>
+        <ul class="checks">
+          <li>프로세스별 독립 설정 파일 · 공통 설정 체계</li>
+          <li>프로세스 단위 시작 · 중지 · 재시작</li>
+          <li>NTP 시간 동기화로 현장 간 시각 일치</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+        <h3>현장마다 다른 구성도 쉽게</h3>
+        <p>ESS, 태양광 연계, PCS 컨트롤러 등 현장 특성에 맞춰 app 계층을 조합합니다.</p>
+      </div>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">04</div>
+        <h3>서버부터 임베디드까지</h3>
+        <p>같은 엔진을 x64 Linux 서버와 ARM64 임베디드 컨트롤러에서 함께 씁니다. PCS 제조사는 자사 컨트롤러에 tems를 그대로 탑재할 수 있습니다.</p>
+        <ul class="checks">
+          <li>x64 Linux (Ubuntu) 서버</li>
+          <li>ARM64 임베디드 Linux 컨트롤러</li>
+        </ul>
+      </div>
+      <figure class="figure">
+        <img src="../assets/img/server-embedded.svg" alt="x64 서버와 ARM64 임베디드 컨트롤러에서 같은 tems가 동작하는 그림" width="600" height="340" loading="lazy">
+        <figcaption>하나의 엔진, 두 가지 환경 · 현장 서버와 장비 내장 컨트롤러가 같은 구조로 동작해 유지보수가 단순해집니다.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">SPEC</div>
+      <h2>주요 사양</h2>
+    </div>
+    <table class="spec">
+      <tr><th>제품 형태</th><td>EMS 서버 플랫폼 / PCS 컨트롤러 엔진 (소프트웨어)</td></tr>
+      <tr><th>실행 환경</th><td>x64 Linux 서버, ARM64 임베디드 Linux</td></tr>
+      <tr><th>장치 통신</th><td>Modbus 마스터 · 슬레이브 (TCP, 시리얼), GPIO</td></tr>
+      <tr><th>데이터</th><td>이벤트 · 알람, 이력, 스케줄, 자산, 시계열 DB(PostgreSQL) 적재</td></tr>
+      <tr><th>구조</th><td>base · core · app 3계층 모듈형 프로세스, 프로세스별 설정 파일</td></tr>
+      <tr><th>운영</th><td>NTP 시간 동기화, 데이터 정리 · 백업, tOps 연동 원격 운영</td></tr>
+    </table>
+    <p class="mock-note" style="text-align:left">세부 사양과 추가 프로토콜 지원은 현장 요구에 따라 협의합니다.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">PACKAGE</div>
+      <h2>단독으로, 또는 tOps와 함께</h2>
+    </div>
+    <div class="duo">
+      <div class="card">
+        <h3>tems 단독</h3>
+        <ul class="checks">
+          <li>자사 운영 체계가 이미 있는 경우</li>
+          <li>PCS 제조사의 컨트롤러 엔진 탑재</li>
+          <li>현장 설비 제어 · 기록에 집중</li>
+        </ul>
+      </div>
+      <div class="card with">
+        <h3>tems + tOps <span class="pill run" style="font-size:12px">추천</span></h3>
+        <ul class="checks">
+          <li>여러 현장의 tems 서버를 한 화면에서 감시</li>
+          <li>tems 설정을 검증된 화면으로 원격 편집</li>
+          <li>프로세스 재시작 · 배포 · 백업을 현장 방문 없이</li>
+        </ul>
+        <p style="margin-top:14px"><a href="../tops/" style="color:var(--brand-600);font-weight:700">tOps 알아보기 →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2>tems 도입을 검토하고 계신가요?</h2>
+        <p>현장 구성과 연동 장비를 알려주시면 맞는 구성을 제안해 드립니다.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="../contact/?product=tems">tems 도입 문의</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="../"><img src="../assets/logo.png" alt="bronto"></a>
+        <p>브론토는 에너지 설비 제어 엔진 tems와 원격 운영 도구 tOps를 개발합니다.</p>
+      </div>
+      <div>
+        <h4>제품</h4>
+        <ul>
+          <li><a href="../tems/">tems</a></li>
+          <li><a href="../tops/">tOps</a></li>
+          <li><a href="../#packages">도입 구성</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>문의</h4>
+        <ul>
+          <li><a href="../contact/">도입 문의 · 데모 요청</a></li>
+          <li><a href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year">2026</span> 브론토 bronto. All rights reserved.</span>
+      <span>bronto.co.kr</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/main.js"></script>
+</body>
+</html>

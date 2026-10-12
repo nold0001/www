@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="작업 목록에서 점검 명령을 실행한 결과">
+  <rect width="600" height="340" rx="18" fill="#eaf2fd"/>
+  <g font-family="Pretendard, 'Noto Sans KR', sans-serif">
+    <rect x="36" y="36" width="190" height="268" rx="10" fill="#fff"/>
+    <text x="54" y="64" font-size="14" font-weight="700" fill="#4b5f7a">작업 목록</text>
+    <g font-size="13" fill="#1d2b3e">
+      <rect x="48" y="78" width="166" height="34" rx="6" fill="#e3edfc"/><text x="60" y="100" font-weight="700" fill="#2361bd">tems 상태 점검</text>
+      <text x="60" y="138">디스크 사용량</text><text x="60" y="172">시간 동기화 확인</text><text x="60" y="206">로그 정리</text><text x="60" y="240">tems 재시작</text>
+    </g>
+    <rect x="240" y="36" width="324" height="268" rx="10" fill="#0b1626"/>
+    <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13">
+      <text x="258" y="66" fill="#6ca5f2">$ tems status</text>
+      <text x="258" y="94" fill="#c9d4e3">bomni   <tspan fill="#22b37a">running</tspan></text>
+      <text x="258" y="116" fill="#c9d4e3">cdev    <tspan fill="#22b37a">running</tspan></text>
+      <text x="258" y="138" fill="#c9d4e3">chist   <tspan fill="#22b37a">running</tspan></text>
+      <text x="258" y="160" fill="#c9d4e3">amodm   <tspan fill="#22b37a">running</tspan></text>
+      <text x="258" y="182" fill="#c9d4e3">asim    <tspan fill="#8ea2bd">stopped</tspan></text>
+      <text x="258" y="216" fill="#6ca5f2">$ df -h /</text>
+      <text x="258" y="240" fill="#c9d4e3">/dev/sda1  64G  41G  <tspan fill="#f5a524">68%</tspan></text>
+      <rect x="258" y="258" width="9" height="16" fill="#6ca5f2"/>
+    </g>
+  </g>
+</svg>
