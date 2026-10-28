@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif">
+  <defs>
+    <filter id="sh" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="5" dy="6" stdDeviation="5" flood-color="#0b1626" flood-opacity=".22"/>
+    </filter>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#7b899c"/>
+    </marker>
+    <marker id="arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#2f78e0"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" fill="#f4f7fb"/>
+
+  <!-- 1. 릴리스 -->
+  <g filter="url(#sh)">
+    <rect x="30" y="170" width="200" height="150" rx="16" fill="#fff" stroke="#e2e8f0"/>
+  </g>
+  <text x="50" y="205" font-size="13" font-weight="700" fill="#7b899c" letter-spacing="1">RELEASE</text>
+  <text x="50" y="235" font-size="20" font-weight="800" fill="#142235">릴리스</text>
+  <text x="50" y="262" font-size="14" fill="#4a5a70">새 버전을 서명해</text>
+  <text x="50" y="284" font-size="14" fill="#4a5a70">"쓸 수 있는 버전"으로</text>
+  <text x="50" y="306" font-size="14" fill="#4a5a70">올린다(오프라인 키)</text>
+
+  <path d="M236 245 H282" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <!-- 2. tVault 서버 -->
+  <g filter="url(#sh)">
+    <rect x="290" y="130" width="230" height="230" rx="18" fill="#102036"/>
+  </g>
+  <text x="314" y="168" font-size="13" font-weight="700" fill="#6ca5f2" letter-spacing="1">tVault SERVER</text>
+  <text x="314" y="200" font-size="22" font-weight="800" fill="#fff">tVault 서버</text>
+  <g font-size="14" fill="#c9d4e3">
+    <text x="314" y="232">· 서명된 배포 목록</text>
+    <text x="314" y="258">· 링(배포 단계)·목표 버전</text>
+    <text x="314" y="284">· 장비별 배포 지시 서명</text>
+    <text x="314" y="310">· 라이선스·권한·감사 로그</text>
+    <text x="314" y="336">· 웹 콘솔(그룹·고객사별)</text>
+  </g>
+
+  <!-- 링 3개 -->
+  <path d="M526 200 C560 200 560 92 600 92" fill="none" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M526 245 H598" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M526 290 C560 290 560 400 600 400" fill="none" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <g filter="url(#sh)">
+    <rect x="606" y="44" width="250" height="96" rx="14" fill="#fff" stroke="#e2e8f0"/>
+    <rect x="606" y="197" width="250" height="96" rx="14" fill="#fff" stroke="#e2e8f0"/>
+    <rect x="606" y="352" width="250" height="96" rx="14" fill="#fff" stroke="#2f78e0" stroke-width="2"/>
+  </g>
+  <rect x="606" y="44" width="8" height="96" rx="4" fill="#22b37a"/>
+  <rect x="606" y="197" width="8" height="96" rx="4" fill="#f5a524"/>
+  <rect x="606" y="352" width="8" height="96" rx="4" fill="#2f78e0"/>
+  <text x="630" y="78" font-size="17" font-weight="800" fill="#142235">① 내부 · 자동</text>
+  <text x="630" y="104" font-size="14" fill="#4a5a70">브론토 시험 장비에 먼저</text>
+  <text x="630" y="125" font-size="13" fill="#7b899c">헬스체크 실패면 링이 자동으로 멈춤</text>
+  <text x="630" y="231" font-size="17" font-weight="800" fill="#142235">② 파일럿 · 고객 승인</text>
+  <text x="630" y="257" font-size="14" fill="#4a5a70">고객사 시험 서버 몇 대</text>
+  <text x="630" y="278" font-size="13" fill="#7b899c">[다음 링으로] 버튼 하나로 넘김</text>
+  <text x="630" y="386" font-size="17" font-weight="800" fill="#142235">③ 고객사 운영 · 고객 승인</text>
+  <text x="630" y="412" font-size="14" fill="#4a5a70">고객사·부서 담당자가 승인한</text>
+  <text x="630" y="433" font-size="14" fill="#4a5a70">장비만, 정한 시각에</text>
+
+  <!-- 메일 승인 -->
+  <path d="M862 400 H900" stroke="#2f78e0" stroke-width="2.5" marker-end="url(#arb)"/>
+  <g filter="url(#sh)">
+    <rect x="906" y="340" width="264" height="140" rx="16" fill="#e9f1fd" stroke="#2f78e0"/>
+  </g>
+  <g transform="translate(926 360)" fill="none" stroke="#2361bd" stroke-width="2.2" stroke-linejoin="round">
+    <rect x="0" y="0" width="34" height="24" rx="4" fill="#fff"/>
+    <path d="M0 2 L17 14 L34 2"/>
+  </g>
+  <text x="972" y="380" font-size="16" font-weight="800" fill="#2361bd">담당자 메일 승인</text>
+  <g font-size="13.5" fill="#142235">
+    <text x="926" y="410">링크 → 6자리 확인 코드</text>
+    <text x="926" y="432">→ 장비 고르기(호스트·IP)</text>
+    <text x="926" y="454">→ 설치 시각 정하기 → 승인</text>
+  </g>
+
+  <!-- 장비 -->
+  <path d="M862 92 H1000 V150" fill="none" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M862 245 H902" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M1038 334 V300" stroke="#2f78e0" stroke-width="2.5" marker-end="url(#arb)"/>
+  <g filter="url(#sh)">
+    <rect x="906" y="156" width="264" height="138" rx="16" fill="#fff" stroke="#e2e8f0"/>
+  </g>
+  <text x="926" y="190" font-size="13" font-weight="700" fill="#7b899c" letter-spacing="1">DEVICES</text>
+  <text x="926" y="218" font-size="19" font-weight="800" fill="#142235">현장 장비</text>
+  <text x="926" y="244" font-size="14" fill="#4a5a70">에이전트가 지시를 확인해 설치</text>
+  <text x="926" y="266" font-size="14" fill="#4a5a70">→ 헬스체크 → 실패면 되돌림</text>
+  <text x="926" y="286" font-size="13" fill="#7b899c">Windows · Linux(x64·ARM64)</text>
+
+  <!-- 결과 메일 -->
+  <path d="M1170 225 C1195 225 1195 505 1060 505 H340" fill="none" stroke="#22b37a" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#ar)"/>
+  <rect x="380" y="490" width="430" height="28" rx="14" fill="#fff" stroke="#22b37a"/>
+  <text x="595" y="509" font-size="13.5" font-weight="700" fill="#126b45" text-anchor="middle">끝나면 승인자에게 결과 메일 - 장비별 업데이트 시각 · 실패 내용</text>
+</svg>

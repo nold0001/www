@@ -19,6 +19,10 @@
   --bad: #e5484d;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(16, 32, 54, .08);
+  /* 박스·이미지의 입체감: 오른쪽 아래로 진한 그림자 */
+  --shadow-br: 6px 8px 18px rgba(11, 22, 38, .24);
+  --shadow-br-hover: 9px 12px 26px rgba(11, 22, 38, .3);
+  --shadow-br-dark: 6px 8px 20px rgba(0, 0, 0, .55);
   --max: 1160px;
   --font: "Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
@@ -338,3 +342,42 @@ code { font-family: var(--mono); font-size: .9em; }
 .form-status.err { background: #fde8e8; color: #a8262b; }
 .form-status.info { background: var(--brand-50); color: var(--brand-600); }
 .btn[disabled] { opacity: .6; cursor: progress; transform: none; }
+
+/* ---------- 입체감: 박스·이미지 오른쪽 아래 그림자 (2026-10-29) ---------- */
+.card, .product-card, .plan, .layer, .spec, .duo .card, .cta, .persona,
+.shot a, .figure img, .screen-grid .shot a, .phone img, .stat-box, .faq details {
+  box-shadow: var(--shadow-br);
+}
+.product-card:hover, .shot a:hover { box-shadow: var(--shadow-br-hover); }
+.plan.best { box-shadow: var(--shadow-br-hover); }
+.section.dark .flow .node, .section.dark .figure img, .hero .shot a, .hero .pair-box { box-shadow: var(--shadow-br-dark); }
+.section.dark .card { box-shadow: var(--shadow-br-dark); }
+
+/* ---------- tVault·tOps 페이지 추가 요소 ---------- */
+.screen-grid { display: grid; gap: 28px; }
+@media (min-width: 860px) { .screen-grid { grid-template-columns: 1fr 1fr; } }
+.phones { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; }
+.phone { margin: 0; width: 230px; }
+.phone img { width: 100%; height: auto; border-radius: 22px; border: 6px solid #142235; background: #142235; }
+.phone figcaption { font-size: 13px; color: var(--ink-3); margin-top: 12px; text-align: center; }
+.stat-row { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 860px) { .stat-row { grid-template-columns: repeat(4, 1fr); } }
+.stat-box { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
+.stat-box b { display: block; font-size: 28px; font-weight: 800; color: var(--brand-600); line-height: 1.2; }
+.stat-box span { font-size: 14px; color: var(--ink-2); }
+.pain { border-left: 4px solid var(--bad); }
+.pain h3 { font-size: 18px; }
+.faq { display: grid; gap: 14px; }
+.faq details { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; }
+.faq summary { cursor: pointer; font-weight: 700; }
+.faq details p { margin: 10px 0 0; color: var(--ink-2); }
+.newtag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .04em; color: #fff; background: var(--bad); border-radius: 6px; padding: 2px 7px; vertical-align: middle; margin-left: 6px; }
+.product-card.tvault { border-top: 4px solid var(--ok); }
+.hero .pair-box { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: 10px; padding: 12px 14px; color: #d6e0ec; }
+.hero .pair-box b { color: #fff; }
+.steps { counter-reset: st; display: grid; gap: 16px; }
+@media (min-width: 900px) { .steps { grid-template-columns: repeat(4, 1fr); } }
+.steps .card { position: relative; padding-top: 44px; }
+.steps .card::before { counter-increment: st; content: counter(st); position: absolute; top: 14px; left: 28px; width: 24px; height: 24px; border-radius: 50%;
+  background: var(--brand); color: #fff; font-size: 13px; font-weight: 800; display: grid; place-items: center; }
+@media (max-width: 600px) { .stat-box b { font-size: 21px; } .stat-box { padding: 16px; } .phone { width: 46%; } }

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>tOps - tems 원격 운영 도구 | 브론토</title>
-<meta name="description" content="tOps 는 여러 현장의 tems 서버를 원격으로 운영하는 도구입니다. 현황판, 모니터링, 프로세스 제어, 설정 편집, 파일 배포·백업, 원격 명령, 계정·그룹 권한.">
+<meta name="description" content="tOps 는 여러 현장의 tems 서버를 원격으로 운영하는 도구입니다. 현황판, 모니터링, 환경 점검, 검증되는 설정 편집, 오프라인 모드, 파일 배포·백업, 서버 작업, Android 앱.">
 <meta property="og:title" content="tOps - tems 원격 운영 도구">
 <meta property="og:url" content="https://www.bronto.co.kr/tops/">
 <meta property="og:image" content="https://www.bronto.co.kr/assets/og-image.png">
@@ -32,9 +32,10 @@
     <nav class="nav" id="nav">
       <a href="../tems/">tems</a>
       <a href="../tops/" aria-current="page">tOps</a>
+      <a href="../tvault/">tVault</a>
       <a href="../#solutions">적용 분야</a>
       <a href="../#packages">도입 구성</a>
-      <a class="btn btn-primary" href="../contact/">도입 문의</a>
+      <a class="btn btn-primary" href="../contact/">문의</a>
     </nav>
   </div>
 </header>
@@ -46,14 +47,14 @@
     <div>
       <span class="eyebrow">OPERATIONS</span>
       <h1>tOps</h1>
-      <p class="lead" style="margin-bottom:12px"><b style="color:#fff">tems 서버를 원격으로 운영하는 도구.</b><br>여러 현장을 한 화면에서 감시하고, 현장에 가지 않고도 재시작 · 설정 변경 · 배포까지 처리합니다.</p>
+      <p class="lead" style="margin-bottom:12px"><b style="color:#fff">tems 서버를 원격으로 운영하는 도구.</b><br>여러 현장을 한 화면에서 감시하고, 현장에 가지 않고도 재시작 · 설정 점검과 변경 · 배포까지 처리합니다. 이제 휴대폰(Android)과 오프라인 작업도 지원합니다.</p>
       <div class="pair" style="display:grid;gap:10px;margin:24px 0 28px;max-width:30em">
         <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;color:#d6e0ec"><b style="color:#fff">brontod</b> · tems 서버에 설치되는 운영 데몬. 상태 수집과 명령 실행, 권한 검증을 맡습니다.</div>
         <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;color:#d6e0ec"><b style="color:#fff">tdoctor</b> · 운영자 PC의 관리 화면. 여러 brontod에 접속해 한곳에서 운영합니다.</div>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" href="../contact/?product=tOps">tOps 도입 문의</a>
-        <a class="btn btn-ghost" href="../contact/?product=tOps&amp;type=데모 요청">데모 요청</a>
+        <a class="btn btn-primary" href="../contact/?product=tOps">tOps 문의</a>
+        <a class="btn btn-ghost" href="#features">기능 보기</a>
       </div>
     </div>
     <div>
@@ -65,7 +66,18 @@
   </div>
 </section>
 
-<section class="section" id="features">
+<section class="section" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="stat-row">
+      <div class="stat-box"><b>100대+</b><span>그룹 허브 연결로 노드가 많아도 한 화면 - 노드별 상태 10열 확대</span></div>
+      <div class="stat-box"><b>1초 이력</b><span>CPU·메모리·디스크를 서버가 1초마다 모아 60분 보관 - 그래프가 바로 찬다</span></div>
+      <div class="stat-box"><b>4개 언어</b><span>한국어 · English · 日本語 · 中文 화면</span></div>
+      <div class="stat-box"><b>PC + 휴대폰</b><span>Windows · Linux 의 tdoctor 와 Android 앱</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" style="padding-top:40px">
   <div class="wrap">
     <div class="section-head">
       <div class="kicker">FEATURES</div>
@@ -76,26 +88,80 @@
       <div class="feature-text">
         <div class="num">01</div>
         <h3>현황판 · 모니터링</h3>
-        <p>접속한 모든 노드의 상태를 한 화면에 모으고, 주의가 필요한 항목을 먼저 보여줍니다. 항목에서 바로 해당 노드로 들어가 조치합니다.</p>
+        <p>그룹의 모든 노드 상태를 한 화면에 모으고, 주의가 필요한 항목을 먼저 보여줍니다. 항목을 누르면 바로 그 노드의 해당 화면으로 들어가 조치합니다.</p>
         <ul class="checks">
-          <li>노드별 정상 · 주의 · 장애 요약</li>
-          <li>CPU · 메모리 · 디스크 · 프로세스 추이 그래프</li>
-          <li>서버별 색 테마로 현장 혼동 방지</li>
+          <li>사이트 건강 점수, 노드별 상태 카드, tems 프로세스·장치 통신 요약</li>
+          <li>이벤트 24시간 히트스트립과 최근 이벤트(유형별 색)</li>
+          <li>카드 끌어 옮기기·크게 보기, 관제 모드(전체 화면·큰 글자)</li>
+          <li>노드 100대 이상 - 작게 보기 자동 전환, 상위 N 자원, 10열 확대 창</li>
+          <li>서버별 색 테마로 현장 혼동 방지, 연결 끊김은 따로 표시</li>
         </ul>
       </div>
       <figure class="shot">
         <a href="../assets/img/screens/system.png" target="_blank" rel="noopener"><img src="../assets/img/screens/system.png" alt="서버 CPU, 메모리, 디스크, 네트워크 추이 그래프 실제 화면" width="1440" height="900" loading="lazy"></a>
-        <figcaption>tdoctor 실제 화면 · 데모 서버 · 시스템 모니터링</figcaption>
+        <figcaption>tdoctor 실제 화면 · 데모 서버 · 시스템 모니터링(1초 이력)</figcaption>
       </figure>
     </div>
 
     <div class="feature rev">
       <div class="feature-text">
         <div class="num">02</div>
+        <h3>tems 환경 점검 <span class="newtag">NEW</span></h3>
+        <p>tems 환경설정을 temsconfig.xml 부터 연결된 모든 파일(XML·.conf)까지 한 번에 점검합니다. tems 가 설정을 버리거나 기동·제어가 실패할 문제(오류), 동작은 하지만 의도와 다를 수 있는 것(경고), 참고(정보)로 나눠 알려 줍니다.</p>
+        <ul class="checks">
+          <li>프로세스 목록 → 환경파일 → 연결 파일 → 데이터맵 → 장치 → 슬레이브맵 6단계</li>
+          <li>규칙 번호·파일·줄로 결과를 보이고, 두 번 누르면 그 줄을 편집기에서 연다</li>
+          <li>장치 slave_id, 데이터맵 비트 넘침, tpool 링크 대상 등 파일 사이 관계까지</li>
+          <li>보고서로 저장해 현장 점검 기록으로 남긴다</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../assets/img/screens/tops2/check2.png" target="_blank" rel="noopener"><img src="../assets/img/screens/tops2/check2.png" alt="환경 점검 탭: 단계별 오류·경고·정보 수, 점검한 파일 표, 규칙별 결과 목록" width="1090" height="745" loading="lazy"></a>
+        <figcaption>tdoctor 실제 화면 · 시험 설정 · 환경 점검</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">03</div>
+        <h3>검증되는 설정 편집</h3>
+        <p>tems 설정 파일을 텍스트로 직접 고치지 않고, 항목별 설명과 허용 범위가 붙은 화면에서 편집합니다. 데이터맵·슬레이브맵처럼 수천 줄짜리 XML 도 표로 1초 남짓에 열고, 장치별로 나눠 봅니다.</p>
+        <ul class="checks">
+          <li>프로세스별 설정 · XML 레코드를 표로 편집, 원문 직접 편집(줄 번호)</li>
+          <li>값 형식·범위 검증, 저장 전에 환경 점검과 같은 규칙으로 파일 검사</li>
+          <li>잘못된 줄을 두 번 누르면 그 행으로 이동</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../assets/img/screens/tops2/line1.png" target="_blank" rel="noopener"><img src="../assets/img/screens/tops2/line1.png" alt="데이터맵 편집: 장치 선택, 포인트 정의 표, 아래에 파일 규칙 검사 결과" width="1090" height="745" loading="lazy"></a>
+        <figcaption>tdoctor 실제 화면 · 시험 설정 · 데이터맵 편집과 규칙 검사</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">04</div>
+        <h3>오프라인 모드 <span class="newtag">NEW</span></h3>
+        <p>서버(brontod)에 접속하지 않고 PC 의 tems 설정 폴더를 바로 열어 편집하고 점검합니다. 현장 출동 전에 사무실에서 설정을 준비하거나, 인터넷이 안 되는 곳에서 작업할 때 씁니다.</p>
+        <ul class="checks">
+          <li>접속 창의 [오프라인으로 열기…] 또는 실행 옵션으로 로컬 작업 폴더 지정</li>
+          <li>환경설정·환경 점검을 온라인과 같은 화면으로</li>
+          <li>나중에 접속해 파일 배포로 서버에 반영</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../assets/img/screens/tops2/offline2.png" target="_blank" rel="noopener"><img src="../assets/img/screens/tops2/offline2.png" alt="오프라인 모드의 환경설정 필드 입력 화면" width="1090" height="745" loading="lazy"></a>
+        <figcaption>tdoctor 실제 화면 · 오프라인 모드 · 환경설정</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">05</div>
         <h3>프로세스 제어</h3>
         <p>tems의 각 프로세스 상태를 실시간으로 보고, 시작 · 중지 · 재시작을 원격에서 실행합니다.</p>
         <ul class="checks">
-          <li>프로세스별 실행 상태 · 자원 사용량</li>
+          <li>프로세스별 실행 상태 · Copy No · 자원 사용량</li>
           <li>시작 · 중지 · 재시작 원격 실행</li>
           <li>제어 권한 요청 · 승인으로 동시 조작 방지</li>
         </ul>
@@ -106,31 +172,14 @@
       </figure>
     </div>
 
-    <div class="feature">
-      <div class="feature-text">
-        <div class="num">03</div>
-        <h3>검증되는 설정 편집</h3>
-        <p>tems 설정 파일을 텍스트로 직접 고치지 않고, 항목별 설명과 허용 범위가 붙은 화면에서 편집합니다. 잘못된 값은 저장 전에 막습니다.</p>
-        <ul class="checks">
-          <li>프로세스별 설정 · XML 레코드를 표 형태로 편집</li>
-          <li>값 형식 · 범위 검증, 변경 내역 비교</li>
-          <li>필요하면 원문 직접 편집도 지원</li>
-        </ul>
-      </div>
-      <figure class="shot">
-        <a href="../assets/img/screens/config.png" target="_blank" rel="noopener"><img src="../assets/img/screens/config.png" alt="항목별 설명과 기본값이 붙은 설정 편집 실제 화면" width="1440" height="900" loading="lazy"></a>
-        <figcaption>tdoctor 실제 화면 · 데모 서버 · 환경설정</figcaption>
-      </figure>
-    </div>
-
     <div class="feature rev">
       <div class="feature-text">
-        <div class="num">04</div>
+        <div class="num">06</div>
         <h3>파일 배포 · 백업 · 롤백</h3>
         <p>새 버전 파일을 여러 서버에 한 번에 배포하고, 배포 전 상태를 자동으로 보관합니다. 문제가 생기면 이전 상태로 되돌립니다.</p>
         <ul class="checks">
-          <li>다중 서버 일괄 배포</li>
-          <li>배포 전 자동 백업 · 롤백</li>
+          <li>다중 서버 일괄 배포, 노드 기준 전체 진행률</li>
+          <li>배포 전 자동 백업 · 롤백 · 배포 뒤 재시작</li>
           <li>보관 용량 한도 관리</li>
         </ul>
       </div>
@@ -142,35 +191,56 @@
 
     <div class="feature">
       <div class="feature-text">
-        <div class="num">05</div>
-        <h3>원격 명령 · 작업 목록</h3>
-        <p>자주 쓰는 점검 명령을 작업으로 등록해 두고, 서버를 골라 실행한 뒤 결과를 바로 확인합니다.</p>
+        <div class="num">07</div>
+        <h3>서버 작업 · 원격 설치·업그레이드</h3>
+        <p>자주 쓰는 점검 명령을 작업으로 등록해 두고, 서버를 골라 실행한 뒤 결과를 바로 확인합니다. brontod 를 새 서버에 원격으로 설치하고 그룹에 가입시키거나, 여러 서버를 한 번에 업그레이드합니다.</p>
         <ul class="checks">
-          <li>자주 쓰는 명령 작업 목록</li>
-          <li>서버 파일 원격 편집</li>
-          <li>관리자 작업은 별도 허용 시에만 실행</li>
+          <li>내장 작업: tems·brontod 설치 · 환경 · 운영 묶음</li>
+          <li>다른 서버(SSH) 작업 - 여러 대상과 대상별 SSH·sudo 비밀번호</li>
+          <li>brontod 업그레이드: 바뀐 파일만 미리 보내 동시 교체·즉시 재시작</li>
+          <li>임베디드 장비(dropbear·busybox)도 원격 설치·가입 점검</li>
         </ul>
       </div>
-      <figure class="figure">
-        <img src="../assets/img/tasks.svg" alt="작업 목록에서 tems 상태 점검을 실행한 결과 화면 예시" width="600" height="340" loading="lazy">
-        <figcaption>점검을 반복 가능한 작업으로 · 사람마다 다르던 점검 절차를 작업으로 정리해 누구나 같은 방식으로 실행합니다.</figcaption>
+      <figure class="shot">
+        <a href="../assets/img/screens/server-task.png" target="_blank" rel="noopener"><img src="../assets/img/screens/server-task.png" alt="서버 작업 목록과 실행 결과 실제 화면" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 실제 화면 · 데모 서버 · 서버 작업</figcaption>
       </figure>
     </div>
 
     <div class="feature rev">
       <div class="feature-text">
-        <div class="num">06</div>
+        <div class="num">08</div>
         <h3>계정 · 그룹 · 팀 채팅</h3>
         <p>운영 팀원마다 계정을 두고 그룹 단위로 서버 접근을 나눕니다. 같은 서버를 보는 팀원끼리 바로 대화합니다.</p>
         <ul class="checks">
-          <li>계정 · 그룹별 접근 권한</li>
-          <li>위험한 명령은 서버(brontod)에서 한 번 더 검증</li>
-          <li>그룹 채팅으로 조치 내용 공유</li>
+          <li>ID 또는 이메일로 로그인, 계정 · 그룹별 접근 권한</li>
+          <li>그룹 허브 연결 - 허브 한 곳이 상태·이벤트를 중계해 대규모 그룹도 가볍게</li>
+          <li>가입 요청 승인 · 여러 노드의 brontod 재시작·정지 · 다른 그룹으로 옮기기</li>
+          <li>위험한 명령은 서버(brontod)에서 한 번 더 검증, 그룹 채팅으로 조치 공유</li>
         </ul>
       </div>
       <figure class="figure">
         <img src="../assets/img/team.svg" alt="운영 그룹 채팅과 계정 권한, 제어 승인, 서버 재검증 단계" width="600" height="340" loading="lazy">
         <figcaption>화면과 서버, 두 번 확인 · 화면에서 허용된 작업이라도 서버가 권한과 값을 다시 확인한 뒤에 실행합니다.</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">09</div>
+        <h3>tVault 와 함께 - 배포·라이선스 <span class="newtag">NEW</span></h3>
+        <p>tdoctor 와 brontod 는 tVault 로 설치하고 업데이트합니다. 고객사 서버의 brontod 는 고객 담당자가 승인한 장비만 정한 시각에 바뀝니다. tdoctor 는 tVault 라이선스로 Basic · Pro 를 나눕니다.</p>
+        <ul class="checks">
+          <li>설치 파일 하나로 tdoctor 설치 · 시작 메뉴 · 알림 영역 아이콘</li>
+          <li>업데이트 알림: 지금 · 나중에 · 건너뛰기, 변경 사항 보기</li>
+          <li>Pro: 여러 노드 파일 배포·서버 작업 / Basic: 한 노드씩</li>
+          <li>라이선스 파일 서명·PC 확인, 복사본은 Pro 평가판 10일</li>
+        </ul>
+        <p style="margin-top:14px"><a href="../tvault/" style="color:var(--brand-600);font-weight:700">tVault 알아보기 →</a></p>
+      </div>
+      <figure class="shot">
+        <a href="../assets/img/screens/tvault/group-devices.png" target="_blank" rel="noopener"><img src="../assets/img/screens/tvault/group-devices.png" alt="tVault 웹 콘솔의 고객사 장비 목록: brontod·tdoctor 버전" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tVault 웹 콘솔 · 고객사 장비의 brontod·tdoctor 버전</figcaption>
       </figure>
     </div>
   </div>
@@ -179,17 +249,20 @@
 <section class="section soft">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker">ROADMAP</div>
-      <h2>곧, 휴대폰에서도</h2>
-      <p>현황판과 모니터링을 휴대폰에서 확인하는 Android 앱을 준비하고 있습니다. 이동 중에도 현장 상태를 놓치지 마세요.</p>
+      <div class="kicker">MOBILE <span class="newtag">NEW</span></div>
+      <h2>휴대폰에서도 - tdoctor Android 앱</h2>
+      <p>현황판과 알림을 휴대폰에서 확인하고, 이동 중에도 프로세스 시작·정지와 서버 작업, 환경 점검까지 처리합니다. 백그라운드에서도 tems 고장·경보와 채팅을 폰 알림으로 받습니다.</p>
     </div>
-    <figure class="figure" style="max-width:760px;margin:0 auto 40px">
-      <img src="../assets/img/devices.svg" alt="PC의 tdoctor 현황판과 휴대폰 앱 화면 예시" width="600" height="360" loading="lazy">
-    </figure>
-    <div class="grid grid-3">
-      <div class="card"><h3>PC · tdoctor</h3><p>Windows · Linux 운영자 PC에서 전체 기능을 사용합니다.</p></div>
-      <div class="card"><h3>서버 · brontod</h3><p>tems가 동작하는 x64 · ARM64 Linux 서버에 설치합니다.</p></div>
-      <div class="card"><h3>모바일 · 준비 중</h3><p>Android 앱으로 현황 확인과 알림 중심 기능을 제공할 예정입니다.</p></div>
+    <div class="phones">
+      <figure class="phone"><img src="../assets/img/screens/tops2/m-dashboard.png" alt="Android 앱 현황판: 사이트 건강 점수, 프로세스, 장치 연결, 자원, 확인할 것" width="400" height="800" loading="lazy"><figcaption>현황판</figcaption></figure>
+      <figure class="phone"><img src="../assets/img/screens/tops2/m-processes.png" alt="Android 앱 프로세스 탭" width="400" height="800" loading="lazy"><figcaption>프로세스 · 시작·정지·로그</figcaption></figure>
+      <figure class="phone"><img src="../assets/img/screens/tops2/m-exec_tasks.png" alt="Android 앱 서버 작업" width="400" height="800" loading="lazy"><figcaption>서버 작업</figcaption></figure>
+      <figure class="phone"><img src="../assets/img/screens/tops2/m-config_check.png" alt="Android 앱 환경 점검 결과" width="400" height="800" loading="lazy"><figcaption>환경 점검</figcaption></figure>
+    </div>
+    <div class="grid grid-3" style="margin-top:48px">
+      <div class="card"><h3>PC · tdoctor</h3><p>Windows · Linux 운영자 PC에서 전체 기능을 사용합니다. 한국어·영어·일본어·중국어 화면, 언어별 고정폭 글꼴 동봉.</p></div>
+      <div class="card"><h3>서버 · brontod</h3><p>tems가 동작하는 x64 · ARM64 Linux 서버와 임베디드 컨트롤러에 설치합니다. 시스템 자원을 1초마다 모아 60분 보관합니다.</p></div>
+      <div class="card"><h3>모바일 · Android</h3><p>비밀번호는 Android Keystore 로 암호화해 저장하고 자동 로그인합니다. 알림·채팅·프로세스·서버 작업·파일 배포·그룹 관리·환경설정.</p></div>
     </div>
   </div>
 </section>
@@ -227,11 +300,11 @@
     <div class="cta">
       <div>
         <h2>tOps를 직접 써보세요</h2>
-        <p>데모를 요청하시면 실제 화면으로 운영 흐름을 보여드립니다.</p>
+        <p>문의하시면 실제 화면으로 운영 흐름을 보여드립니다.</p>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" href="../contact/?product=tOps&amp;type=데모 요청">데모 요청</a>
-        <a class="btn btn-ghost" href="../contact/?product=tOps">도입 문의</a>
+        <a class="btn btn-primary" href="../contact/?product=tOps">문의</a>
+        <a class="btn btn-ghost" href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a>
       </div>
     </div>
   </div>
@@ -244,20 +317,21 @@
     <div class="top">
       <div>
         <a class="brand" href="../"><img src="../assets/logo.png" alt="bronto"></a>
-        <p>브론토는 에너지 설비 제어 엔진 tems와 원격 운영 도구 tOps를 개발합니다.</p>
+        <p>브론토는 에너지 설비 제어 엔진 tems, 원격 운영 도구 tOps, 배포·라이선스 플랫폼 tVault 를 개발합니다.</p>
       </div>
       <div>
         <h4>제품</h4>
         <ul>
           <li><a href="../tems/">tems</a></li>
           <li><a href="../tops/">tOps</a></li>
+          <li><a href="../tvault/">tVault</a></li>
           <li><a href="../#packages">도입 구성</a></li>
         </ul>
       </div>
       <div>
         <h4>문의</h4>
         <ul>
-          <li><a href="../contact/">도입 문의 · 데모 요청</a></li>
+          <li><a href="../contact/">문의</a></li>
           <li><a href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a></li>
         </ul>
       </div>
