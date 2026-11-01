@@ -35,5 +35,30 @@
     </div>
   </div>
 </main>
+<script>
+  // GitHub Pages 는 404 를 한 장만 쓰므로 주소의 언어 폴더(/en/ /ja/ /zh/)를 보고 문구와 링크를 바꾼다
+  (function () {
+    var parts = location.pathname.split('/').filter(Boolean);
+    if (location.hostname.endsWith('github.io')) parts.shift();
+    var lang = ['en', 'ja', 'zh'].indexOf(parts[0]) >= 0 ? parts[0] : 'ko';
+    if (lang === 'ko') return;
+    var T = {
+      en: ['Page not found | bronto', 'Page not found', 'The address may have changed or the page does not exist. Please choose where to go below.', 'Home', 'Free trial', 'Contact', 'en'],
+      ja: ['ページが見つかりません | bronto', 'ページが見つかりません', 'アドレスが変更されたか、存在しないページです。下記から移動先をお選びください。', 'ホーム', '無料トライアル', 'お問い合わせ', 'ja'],
+      zh: ['页面不存在 | bronto', '页面不存在', '网址可能已更改，或该页面不存在。请从下方选择要前往的页面。', '首页', '免费试用', '联系我们', 'zh-CN']
+    }[lang];
+    document.title = T[0];
+    document.documentElement.lang = T[6];
+    document.querySelector('h1').textContent = T[1];
+    document.querySelector('.lead').textContent = T[2];
+    var links = document.querySelectorAll('.actions a, .brand');
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      a.setAttribute('href', lang + '/' + a.getAttribute('href').replace('./', ''));
+      var k = { '홈으로': 3, '무료 평가판': 4, '문의': 5 }[a.textContent];
+      if (k) a.textContent = T[k];
+    }
+  })();
+</script>
 </body>
 </html>

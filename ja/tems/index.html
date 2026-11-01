@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tems - EMS サーバープラットフォーム · PCS コントローラーエンジン | bronto</title>
+<meta name="description" content="tems は、現場設備と通信して制御する EMS サーバープラットフォームであり PCS コントローラーエンジンです。モジュール型プロセス構成、Modbus 機器通信、イベント・履歴・スケジュール、x64・ARM64 対応。">
+<meta property="og:title" content="tems - EMS サーバープラットフォーム · PCS コントローラーエンジン">
+<meta property="og:url" content="https://www.bronto.co.kr/ja/tems/">
+<meta property="og:image" content="https://www.bronto.co.kr/assets/og-image.png">
+<meta property="og:site_name" content="bronto">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.bronto.co.kr/ja/tems/">
+<!-- i18n:alt -->
+<link rel="alternate" hreflang="ko" href="https://www.bronto.co.kr/tems/">
+<link rel="alternate" hreflang="en" href="https://www.bronto.co.kr/en/tems/">
+<link rel="alternate" hreflang="ja" href="https://www.bronto.co.kr/ja/tems/">
+<link rel="alternate" hreflang="zh-CN" href="https://www.bronto.co.kr/zh/tems/">
+<link rel="alternate" hreflang="x-default" href="https://www.bronto.co.kr/tems/">
+<!-- /i18n:alt -->
+<meta name="theme-color" content="#0b1626">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="bronto ホーム"><img src="../../assets/logo.png" alt="bronto"></a>
+    <button class="menu-btn" aria-label="メニュー" aria-expanded="false" aria-controls="nav">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="../tems/" aria-current="page">tems</a>
+      <a href="../tops/">tOps</a>
+      <a href="../tvault/">tVault</a>
+      <a href="../#solutions">適用分野</a>
+      <a href="../#packages">導入構成</a>
+      <a class="nav-trial" href="../trial/">無料トライアル</a>
+      <a class="btn btn-primary" href="../contact/">お問い合わせ</a>
+      <!-- i18n:lang -->
+<details class="lang-menu">
+        <summary><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span>日本語</span></summary>
+        <div class="lang-list"><a href="../../tems/" hreflang="ko" lang="ko" data-lang="ko">한국어</a><a href="../../en/tems/" hreflang="en" lang="en" data-lang="en">English</a><a href="../../ja/tems/" hreflang="ja" lang="ja" data-lang="ja" aria-current="true">日本語</a><a href="../../zh/tems/" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a></div>
+      </details>
+<!-- /i18n:lang -->
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero hero-sub">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="color:var(--amber);background:rgba(245,165,36,.12);border-color:rgba(245,165,36,.35)">EMS ENGINE</span>
+      <h1>tems</h1>
+      <p class="lead" style="margin-bottom:12px"><b style="color:#fff">EMS サーバープラットフォームであり、PCS コントローラーエンジン。</b><br>現場機器と通信して設備を制御し、イベントと履歴を記録します。必要な機能だけを選んで構成するモジュール型なので、サーバーでも組込みコントローラーでも軽快に動作します。</p>
+      <div class="actions" style="margin-top:28px">
+        <a class="btn btn-primary" href="../contact/?product=tems">tems のお問い合わせ</a>
+        <a class="btn btn-ghost" href="#features">主な機能</a>
+      </div>
+    </div>
+    <div>
+      <div class="layers" aria-label="tems のモジュール構成">
+        <div class="layer app">
+          <div class="lh"><b>app · 現場ごとの機能</b><span>必要なものだけを選択</span></div>
+          <div class="chips"><span class="chip">Modbus マスター</span><span class="chip">Modbus スレーブ</span><span class="chip">時系列 DB への格納</span><span class="chip">データ整理 · バックアップ</span><span class="chip">GPIO</span><span class="chip">シミュレーター</span></div>
+        </div>
+        <div class="layer core">
+          <div class="lh"><b>core · 制御の中核</b><span>機器 · データ · イベント</span></div>
+          <div class="chips"><span class="chip">機器管理</span><span class="chip">データ · スケジュール</span><span class="chip">イベント · アラーム</span><span class="chip">履歴</span><span class="chip">資産</span><span class="chip">HMI 連携</span><span class="chip">時刻同期</span></div>
+        </div>
+        <div class="layer base">
+          <div class="lh"><b>base · 共通基盤</b><span>全プロセス共通</span></div>
+          <div class="chips"><span class="chip">オブジェクト · アラーム管理</span><span class="chip">メッセージング</span><span class="chip">タイマー</span><span class="chip">ノード状態</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">FEATURES</div>
+      <h2>設備制御に必要なものをひとつのエンジンに</h2>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">01</div>
+        <h3>現場機器と直接通信</h3>
+        <p>PCS、BMS、計測器などの現場機器をポイント単位で接続し、上位システムには機器と同じようにデータを提供します。</p>
+        <ul class="checks">
+          <li>Modbus マスター / スレーブ (TCP、シリアル)</li>
+          <li>機器 · ポイントのマッピングを設定ファイルで管理</li>
+          <li>GPIO などコントローラーの入出力と連携</li>
+        </ul>
+      </div>
+      <figure class="figure">
+        <img src="../../assets/img/i18n/ja/device-comm.svg" alt="PCS、BMS、計測器と通信し、HMI と上位システムにデータを提供する tems の構成図" width="600" height="340" loading="lazy">
+        <figcaption>機器 → tems → 上位システム · 機器から読んだ値をデータとして整理し、制御コマンドは機器へ送り返します。同じデータを HMI と上位システムに同時に提供します。</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">02</div>
+        <h3>イベント · 履歴 · スケジュール</h3>
+        <p>設備で起きたことを漏らさず記録し、決められたスケジュールどおりに運転します。</p>
+        <ul class="checks">
+          <li>イベント · アラームの発生と解除を記録</li>
+          <li>運転履歴の保存、時系列 DB (PostgreSQL) への高速格納</li>
+          <li>日単位の運転スケジュール · プロファイル</li>
+          <li>古いデータの自動整理 · バックアップ</li>
+        </ul>
+      </div>
+      <figure class="figure">
+        <img src="../../assets/img/i18n/ja/history.svg" alt="1日の充放電スケジュールとイベントの発生・解除履歴の例" width="600" height="340" loading="lazy">
+        <figcaption>記録と計画をエンジンの中で · 別のシステムを追加しなくても、基本的な記録とスケジュール運用が可能です。</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">03</div>
+        <h3>モジュール型プロセス構成</h3>
+        <p>機能ごとに独立したプロセスとして動作します。現場に必要な機能だけを有効にし、ひとつの機能の問題が設備制御全体に広がらないよう設計しています。</p>
+        <ul class="checks">
+          <li>プロセスごとの独立した設定ファイル · 共通の設定体系</li>
+          <li>プロセス単位の起動 · 停止 · 再起動</li>
+          <li>NTP 時刻同期で現場間の時刻を一致</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+        <h3>現場ごとに異なる構成も簡単に</h3>
+        <p>ESS、太陽光連携、PCS コントローラーなど、現場の特性に合わせて app 層を組み合わせます。</p>
+      </div>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">04</div>
+        <h3>サーバーから組込みまで</h3>
+        <p>同じエンジンを x64 Linux サーバーと ARM64 組込みコントローラーの両方で使います。PCS メーカーは自社コントローラーに tems をそのまま搭載できます。</p>
+        <ul class="checks">
+          <li>x64 Linux (Ubuntu) サーバー</li>
+          <li>ARM64 組込み Linux コントローラー</li>
+        </ul>
+      </div>
+      <figure class="figure">
+        <img src="../../assets/img/i18n/ja/server-embedded.svg" alt="x64 サーバーと ARM64 組込みコントローラーで同じ tems が動作するイラスト" width="600" height="340" loading="lazy">
+        <figcaption>ひとつのエンジン、ふたつの環境 · 現場サーバーと機器内蔵コントローラーが同じ構成で動くため、保守がシンプルになります。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">SPEC</div>
+      <h2>主な仕様</h2>
+    </div>
+    <table class="spec">
+      <tr><th>製品形態</th><td>EMS サーバープラットフォーム / PCS コントローラーエンジン (ソフトウェア)</td></tr>
+      <tr><th>実行環境</th><td>x64 Linux サーバー、ARM64 組込み Linux</td></tr>
+      <tr><th>機器通信</th><td>Modbus マスター · スレーブ (TCP、シリアル)、GPIO</td></tr>
+      <tr><th>データ</th><td>イベント · アラーム、履歴、スケジュール、資産、時系列 DB (PostgreSQL) への格納</td></tr>
+      <tr><th>構成</th><td>base · core · app の3層モジュール型プロセス、プロセスごとの設定ファイル</td></tr>
+      <tr><th>運用</th><td>NTP 時刻同期、データ整理 · バックアップ、tOps 連携によるリモート運用</td></tr>
+    </table>
+    <p class="mock-note" style="text-align:left">詳細仕様や追加プロトコルへの対応は、現場の要件に応じてご相談ください。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">PACKAGE</div>
+      <h2>単体で、または tOps と一緒に</h2>
+    </div>
+    <div class="duo">
+      <div class="card">
+        <h3>tems 単体</h3>
+        <ul class="checks">
+          <li>自社の運用体制がすでにある場合</li>
+          <li>PCS メーカーのコントローラーエンジンとして搭載</li>
+          <li>現場の設備制御と記録に集中</li>
+        </ul>
+      </div>
+      <div class="card with">
+        <h3>tems + tOps <span class="pill run" style="font-size:12px">おすすめ</span></h3>
+        <ul class="checks">
+          <li>複数現場の tems サーバーをひとつの画面で監視</li>
+          <li>tems の設定を検証済みの画面からリモート編集</li>
+          <li>プロセス再起動 · 配布 · バックアップを現場訪問なしで</li>
+        </ul>
+        <p style="margin-top:14px"><a href="../tops/" style="color:var(--brand-600);font-weight:700">tOps について →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2>tems の導入をご検討中ですか?</h2>
+        <p>現場の構成と連携機器をお知らせいただければ、最適な構成をご提案します。すでに tems をお使いなら、tdoctor 無料トライアルのオフラインモードで tems の設定フォルダーをすぐに点検できます。</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="../contact/?product=tems">tems のお問い合わせ</a>
+        <a class="btn btn-amber" href="../trial/">tdoctor 無料トライアル</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="../"><img src="../../assets/logo.png" alt="bronto"></a>
+        <p>bronto は、エネルギー設備の制御エンジン tems、リモート運用ツール tOps、配布・ライセンスプラットフォーム tVault を開発しています。</p>
+      </div>
+      <div>
+        <h4>製品</h4>
+        <ul>
+          <li><a href="../tems/">tems</a></li>
+          <li><a href="../tops/">tOps</a></li>
+          <li><a href="../tvault/">tVault</a></li>
+          <li><a href="../#packages">導入構成</a></li>
+          <li><a href="../trial/">tdoctor 無料トライアル</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a href="../contact/">お問い合わせ</a></li>
+          <li><a href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a></li>
+          <li><a href="../privacy/">個人情報保護方針</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year">2026</span> bronto. All rights reserved.</span>
+      <span>bronto.co.kr</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/main.js"></script>
+</body>
+</html>

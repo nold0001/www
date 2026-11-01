@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="권한 확인을 거친 원격 작업과 팀 채팅">
+  <rect width="600" height="340" rx="18" fill="#eaf2fd"/>
+  <g font-family="'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif">
+    <rect x="36" y="36" width="250" height="268" rx="10" fill="#fff"/>
+    <text x="54" y="64" font-size="14" font-weight="700" fill="#4b5f7a">运维组聊天</text>
+    <g font-size="13">
+      <rect x="54" y="80" width="190" height="44" rx="10" fill="#eef3f9"/><text x="66" y="98" fill="#7d8ea4" font-size="11">金工程师</text><text x="66" y="116" fill="#1d2b3e">准备重启站点 C 的 cdev</text>
+      <rect x="80" y="136" width="190" height="44" rx="10" fill="#2f78e0"/><text x="92" y="154" fill="#dbe8fb" font-size="11">李运维</text><text x="92" y="172" fill="#fff">收到，请继续</text>
+      <rect x="54" y="192" width="190" height="44" rx="10" fill="#eef3f9"/><text x="66" y="210" fill="#7d8ea4" font-size="11">金工程师</text><text x="66" y="228" fill="#1d2b3e">重启完成，一切正常</text>
+    </g>
+    <rect x="304" y="36" width="260" height="268" rx="10" fill="#fff"/>
+    <text x="322" y="64" font-size="14" font-weight="700" fill="#4b5f7a">权限确认</text>
+    <g font-size="13" fill="#1d2b3e">
+      <circle cx="334" cy="98" r="11" fill="#dcf5ea"/><path d="M328 98 l4 4 8 -8" fill="none" stroke="#138a5a" stroke-width="2.5"/><text x="354" y="103">账户 · 组权限</text>
+      <circle cx="334" cy="140" r="11" fill="#dcf5ea"/><path d="M328 140 l4 4 8 -8" fill="none" stroke="#138a5a" stroke-width="2.5"/><text x="354" y="145">控制权限审批</text>
+      <circle cx="334" cy="182" r="11" fill="#dcf5ea"/><path d="M328 182 l4 4 8 -8" fill="none" stroke="#138a5a" stroke-width="2.5"/><text x="354" y="187">服务器(brontod)再验证</text>
+    </g>
+    <rect x="322" y="220" width="224" height="58" rx="8" fill="#0b1626"/>
+    <rect x="404" y="232" width="60" height="34" rx="6" fill="none" stroke="#6ca5f2" stroke-width="2.5"/>
+    <path d="M418 232 v-8 a16 16 0 0 1 32 0 v8" fill="none" stroke="#6ca5f2" stroke-width="2.5"/>
+    <circle cx="434" cy="249" r="4" fill="#6ca5f2"/>
+  </g>
+</svg>

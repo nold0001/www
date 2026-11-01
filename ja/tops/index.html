@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tOps - tems リモート運用ツール | bronto</title>
+<meta name="description" content="tOps は、複数現場の tems サーバーをリモートで運用するツールです。ダッシュボード、モニタリング、環境チェック、検証付きの設定編集、オフラインモード、ファイル配布・バックアップ、サーバー作業、Android アプリ。">
+<meta property="og:title" content="tOps - tems リモート運用ツール">
+<meta property="og:url" content="https://www.bronto.co.kr/ja/tops/">
+<meta property="og:image" content="https://www.bronto.co.kr/assets/og-image.png">
+<meta property="og:site_name" content="bronto">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.bronto.co.kr/ja/tops/">
+<!-- i18n:alt -->
+<link rel="alternate" hreflang="ko" href="https://www.bronto.co.kr/tops/">
+<link rel="alternate" hreflang="en" href="https://www.bronto.co.kr/en/tops/">
+<link rel="alternate" hreflang="ja" href="https://www.bronto.co.kr/ja/tops/">
+<link rel="alternate" hreflang="zh-CN" href="https://www.bronto.co.kr/zh/tops/">
+<link rel="alternate" hreflang="x-default" href="https://www.bronto.co.kr/tops/">
+<!-- /i18n:alt -->
+<meta name="theme-color" content="#0b1626">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="bronto ホーム"><img src="../../assets/logo.png" alt="bronto"></a>
+    <button class="menu-btn" aria-label="メニュー" aria-expanded="false" aria-controls="nav">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="../tems/">tems</a>
+      <a href="../tops/" aria-current="page">tOps</a>
+      <a href="../tvault/">tVault</a>
+      <a href="../#solutions">適用分野</a>
+      <a href="../#packages">導入構成</a>
+      <a class="nav-trial" href="../trial/">無料トライアル</a>
+      <a class="btn btn-primary" href="../contact/">お問い合わせ</a>
+      <!-- i18n:lang -->
+<details class="lang-menu">
+        <summary><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span>日本語</span></summary>
+        <div class="lang-list"><a href="../../tops/" hreflang="ko" lang="ko" data-lang="ko">한국어</a><a href="../../en/tops/" hreflang="en" lang="en" data-lang="en">English</a><a href="../../ja/tops/" hreflang="ja" lang="ja" data-lang="ja" aria-current="true">日本語</a><a href="../../zh/tops/" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a></div>
+      </details>
+<!-- /i18n:lang -->
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero hero-sub">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">OPERATIONS</span>
+      <h1>tOps</h1>
+      <p class="lead" style="margin-bottom:12px"><b style="color:#fff">tems サーバーをリモートで運用するツール。</b><br>複数の現場をひとつの画面で監視し、現場に行かなくても再起動 · 設定の点検と変更 · 配布まで行えます。スマートフォン(Android)とオフライン作業にも対応しました。</p>
+      <div class="pair" style="display:grid;gap:10px;margin:24px 0 28px;max-width:30em">
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;color:#d6e0ec"><b style="color:#fff">brontod</b> · tems サーバーにインストールする運用デーモン。状態の収集、コマンドの実行、権限の検証を担います。</div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;color:#d6e0ec"><b style="color:#fff">tdoctor</b> · 運用者 PC の管理画面。複数の brontod に接続し、一か所で運用します。</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="../contact/?product=tOps">tOps のお問い合わせ</a>
+        <a class="btn btn-amber" href="../trial/">tdoctor 14日間無料トライアル</a>
+        <a class="btn btn-ghost" href="#features">機能を見る</a>
+      </div>
+    </div>
+    <div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/ja/screens/dashboard.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/dashboard.png" alt="tOps ダッシュボードの実際の画面" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 実際の画面 · デモサーバー · ダッシュボード</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="stat-row">
+      <div class="stat-box"><b>100台以上</b><span>グループハブ接続でノードが多くてもひとつの画面に - ノードごとの状態を10列で拡大表示</span></div>
+      <div class="stat-box"><b>1秒履歴</b><span>CPU・メモリ・ディスクをサーバーが1秒ごとに収集し60分保持 - グラフがすぐに埋まる</span></div>
+      <div class="stat-box"><b>4言語</b><span>한국어 · English · 日本語 · 中文 の画面</span></div>
+      <div class="stat-box"><b>PC + スマートフォン</b><span>Windows · Linux の tdoctor と Android アプリ</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" style="padding-top:40px">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">FEATURES</div>
+      <h2>運用者が毎日行う作業をひとつのプログラムで</h2>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">01</div>
+        <h3>ダッシュボード · モニタリング</h3>
+        <p>グループ内のすべてのノードの状態をひとつの画面に集め、注意が必要な項目を先に表示します。項目をクリックすると、そのノードの該当画面に直接移動して対処できます。</p>
+        <ul class="checks">
+          <li>サイト健全性スコア、ノードごとの状態カード、tems プロセス・機器通信の概要</li>
+          <li>イベントの24時間ヒートストリップと最近のイベント(種類別の色)</li>
+          <li>カードのドラッグ移動・拡大表示、監視モード(全画面・大きな文字)</li>
+          <li>ノード100台以上 - 縮小表示へ自動切替、上位 N リソース、10列拡大ウィンドウ</li>
+          <li>サーバーごとの色テーマで現場の取り違えを防止、接続切れは別途表示</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/ja/screens/system.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/system.png" alt="サーバーの CPU、メモリ、ディスク、ネットワーク推移グラフの実際の画面" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 実際の画面 · デモサーバー · システムモニタリング(1秒履歴)</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">02</div>
+        <h3>tems 環境チェック <span class="newtag">NEW</span></h3>
+        <p>tems の環境設定を temsconfig.xml からつながるすべてのファイル(XML・.conf)まで一度に点検します。tems が設定を無視したり起動・制御に失敗したりする問題(エラー)、動作はするが意図と異なる可能性があるもの(警告)、参考(情報)に分けてお知らせします。</p>
+        <ul class="checks">
+          <li>プロセス一覧 → 環境ファイル → 接続ファイル → データマップ → 機器 → スレーブマップの6段階</li>
+          <li>ルール番号・ファイル・行で結果を表示し、ダブルクリックでその行をエディターで開く</li>
+          <li>機器の slave_id、データマップのビット溢れ、tpool のリンク先など、ファイル間の関係まで</li>
+          <li>レポートとして保存し、現場点検の記録に残す</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/ja/screens/tops2/check2.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/tops2/check2.png" alt="環境チェックタブ: 段階ごとのエラー・警告・情報の数、点検したファイルの表、ルールごとの結果一覧" width="1280" height="800" loading="lazy"></a>
+        <figcaption>tdoctor 実際の画面 · テスト設定 · 環境チェック</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">03</div>
+        <h3>検証付きの設定編集</h3>
+        <p>tems の設定ファイルをテキストで直接書き換えるのではなく、項目ごとの説明と許容範囲が付いた画面で編集します。データマップやスレーブマップのような数千行の XML も表として1秒ほどで開き、機器ごとに分けて表示できます。</p>
+        <ul class="checks">
+          <li>プロセスごとの設定 · XML レコードを表で編集、原文の直接編集(行番号)</li>
+          <li>値の形式・範囲を検証し、保存前に環境チェックと同じルールでファイルを検査</li>
+          <li>誤りのある行をダブルクリックするとその行へ移動</li>
+          <li>テキスト画面から外部エディターで開き、エディターで保存するとすぐに反映</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/ja/screens/tops2/line1.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/tops2/line1.png" alt="データマップ編集: 機器の選択、ポイント定義表、下部にファイルルール検査の結果" width="1280" height="800" loading="lazy"></a>
+        <figcaption>tdoctor 実際の画面 · テスト設定 · データマップ編集とルール検査</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">04</div>
+        <h3>オフラインモード <span class="newtag">NEW</span></h3>
+        <p>サーバー(brontod)に接続せずに、PC 上の tems 設定フォルダーを直接開いて編集・点検します。現場に出向く前にオフィスで設定を準備したり、インターネットが使えない場所で作業したりするときに使います。</p>
+        <ul class="checks">
+          <li>接続画面の [オフラインで開く…] または起動オプションでローカル作業フォルダーを指定</li>
+          <li>環境設定・環境チェックをオンラインと同じ画面で</li>
+          <li>あとで接続し、ファイル配布でサーバーに反映</li>
+          <li>以前開いたローカルフォルダーをメニューから選んですぐに切り替え</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/ja/screens/tops2/offline2.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/tops2/offline2.png" alt="オフラインモードの環境設定フィールド入力画面" width="1280" height="800" loading="lazy"></a>
+        <figcaption>tdoctor 実際の画面 · オフラインモード · 環境設定</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">05</div>
+        <h3>プロセス制御</h3>
+        <p>tems の各プロセスの状態をリアルタイムで確認し、起動 · 停止 · 再起動をリモートで実行します。</p>
+        <ul class="checks">
+          <li>プロセスごとの実行状態 · Copy No · リソース使用量</li>
+          <li>起動 · 停止 · 再起動をリモート実行</li>
+          <li>制御権限の要求・承認で同時操作を防止</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/ja/screens/monitoring.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/monitoring.png" alt="tems プロセスと機器・スレーブ通信状態の実際の画面" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 実際の画面 · デモサーバー · tems モニタリング</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">06</div>
+        <h3>ファイル配布 · バックアップ · ロールバック</h3>
+        <p>新しいバージョンのファイルを複数のサーバーに一度に配布し、配布前の状態を自動で保管します。問題が起きたら以前の状態に戻します。</p>
+        <ul class="checks">
+          <li>複数サーバーへの一括配布、ノード単位の全体進捗</li>
+          <li>配布前の自動バックアップ · ロールバック · 配布後の再起動</li>
+          <li>保管容量の上限管理</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/ja/screens/deploy.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/deploy.png" alt="ファイル配布の対象ノードと転送オプションの実際の画面" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 実際の画面 · デモサーバー · ファイル配布</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">07</div>
+        <h3>サーバー作業 · リモートインストール・アップグレード</h3>
+        <p>よく使う点検コマンドを作業として登録しておき、サーバーを選んで実行し、結果をすぐに確認します。brontod を新しいサーバーにリモートでインストールしてグループに参加させたり、複数のサーバーを一度にアップグレードしたりできます。</p>
+        <ul class="checks">
+          <li>内蔵作業: tems・brontod のインストール · 環境 · 運用セット</li>
+          <li>他サーバー(SSH)作業 - 複数の対象と対象ごとの SSH・sudo パスワード</li>
+          <li>brontod のアップグレード: 変更されたファイルだけを事前に送り、一斉に置き換えて即時再起動</li>
+          <li>組込み機器(dropbear・busybox)もリモートインストール・参加チェック</li>
+          <li>SFTP・ターミナル: ホストキーが変わると旧・新のフィンガープリントを表示し確認後に接続、パスワードログインを禁止したサーバーでは原因と解決方法を案内</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/ja/screens/server-task.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/server-task.png" alt="サーバー作業一覧と実行結果の実際の画面" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 実際の画面 · デモサーバー · サーバー作業</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">08</div>
+        <h3>アカウント · グループ · チームチャット</h3>
+        <p>運用チームのメンバーごとにアカウントを用意し、グループ単位でサーバーへのアクセスを分けます。同じサーバーを見ているメンバー同士ですぐに会話できます。</p>
+        <ul class="checks">
+          <li>ID またはメールアドレスでログイン、アカウント · グループごとのアクセス権限</li>
+          <li>グループハブ接続 - 一か所のハブが状態・イベントを中継し、大規模なグループも軽快に</li>
+          <li>参加リクエストの承認 · 複数ノードの brontod 再起動・停止 · 別のグループへの移動</li>
+          <li>危険なコマンドはサーバー(brontod)でもう一度検証、グループチャットで対応を共有</li>
+        </ul>
+      </div>
+      <figure class="figure">
+        <img src="../../assets/img/i18n/ja/team.svg" alt="運用グループチャットとアカウント権限、制御承認、サーバー再検証の段階" width="600" height="340" loading="lazy">
+        <figcaption>画面とサーバーで二重チェック · 画面で許可された操作でも、サーバーが権限と値を再確認してから実行します。</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">09</div>
+        <h3>tVault と連携 - 配布・ライセンス <span class="newtag">NEW</span></h3>
+        <p>tdoctor と brontod は tVault でインストール・更新します。顧客サーバーの brontod は、顧客の担当者が承認した機器だけが指定した時刻に更新されます。tdoctor は tVault のライセンスで Basic · Pro を区別します。</p>
+        <ul class="checks">
+          <li>インストーラーひとつで tdoctor のインストール · スタートメニュー · 通知領域アイコン</li>
+          <li>更新通知: 今すぐ · あとで · スキップ、変更内容の表示</li>
+          <li>Pro: 複数ノードへのファイル配布・サーバー作業 / Basic: 1ノードずつ</li>
+          <li>ライセンスファイルの署名・PC 確認、コピーは Pro トライアル10日間</li>
+          <li>Web サイトから <a href="../trial/" style="color:var(--brand-600);font-weight:600">14日間の Pro トライアル</a> - お申し込みいただくとインストーラーがメールで届きます</li>
+        </ul>
+        <p style="margin-top:14px"><a href="../tvault/" style="color:var(--brand-600);font-weight:700">tVault について →</a></p>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/group-devices.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-devices.png" alt="tVault Web コンソールの顧客機器一覧: brontod・tdoctor バージョン" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tVault Web コンソール · 顧客機器の brontod・tdoctor バージョン</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">MOBILE <span class="newtag">NEW</span></div>
+      <h2>スマートフォンでも - tdoctor Android アプリ</h2>
+      <p>PC の tdoctor で行っていた作業のほとんどをスマートフォンで行えます。ダッシュボード・システムグラフ・グループ状態ボード、プロセスの起動・停止、サーバー作業とコマンド実行、サーバーファイルの表示・ダウンロード・アップロード、tems データ(tpool・履歴・収集)、新しいファイルの配布、環境チェックと設定原文の編集、チャットルームの作成・招待、監査ログまで。tems の故障・警報とチャットは、<b>アプリを閉じても · 画面が消えていても · 再起動したあとでも</b>スマートフォンに通知が届きます。</p>
+    </div>
+    <div class="phones">
+      <figure class="phone"><img src="../../assets/img/i18n/ja/screens/tops2/m-dashboard.png" alt="Android アプリのダッシュボード: サイト健全性スコア、プロセス、機器接続、リソース、確認事項" width="400" height="800" loading="lazy"><figcaption>ダッシュボード</figcaption></figure>
+      <figure class="phone"><img src="../../assets/img/i18n/ja/screens/tops2/m-processes.png" alt="Android アプリのプロセスタブ" width="400" height="800" loading="lazy"><figcaption>プロセス · 起動・停止・ログ</figcaption></figure>
+      <figure class="phone"><img src="../../assets/img/i18n/ja/screens/tops2/m-exec_tasks.png" alt="Android アプリのサーバー作業" width="400" height="800" loading="lazy"><figcaption>サーバー作業</figcaption></figure>
+      <figure class="phone"><img src="../../assets/img/i18n/ja/screens/tops2/m-config_check.png" alt="Android アプリの環境チェック結果" width="400" height="800" loading="lazy"><figcaption>環境チェック</figcaption></figure>
+    </div>
+    <div class="grid grid-3" style="margin-top:48px">
+      <div class="card"><h3>PC · tdoctor</h3><p>Windows · Linux の運用者 PC ですべての機能を使えます。韓国語・英語・日本語・中国語の画面、言語ごとの等幅フォントを同梱。</p></div>
+      <div class="card"><h3>サーバー · brontod</h3><p>tems が動作する x64 · ARM64 Linux サーバーと組込みコントローラーにインストールします。システムリソースを1秒ごとに収集し60分保持します。</p></div>
+      <div class="card"><h3>モバイル · Android</h3><p>韓国語・英語・日本語・中国語の画面、PC と同じサーバーテーマ・マーカー。パスワードは Android Keystore で暗号化して保存し、自動ログインします。ライセンスはアプリが tVault に直接登録して取得し、アカウントごとに PC 1台 + スマートフォン1台を使えます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">PACKAGE</div>
+      <h2>単体で、または tems と一緒に</h2>
+    </div>
+    <div class="duo">
+      <div class="card">
+        <h3>tOps 単体</h3>
+        <ul class="checks">
+          <li>すでに tems サーバーを運用している場合</li>
+          <li>複数現場の運用業務を一か所に集めたいとき</li>
+          <li>現場に行かずに障害に対応したいとき</li>
+        </ul>
+      </div>
+      <div class="card with">
+        <h3>tems + tOps <span class="pill run" style="font-size:12px">おすすめ</span></h3>
+        <ul class="checks">
+          <li>新しい現場を制御から運用までまとめて構築</li>
+          <li>tems の設定体系に合わせた検証付き編集画面</li>
+          <li>導入 · 運用のひとつのサポート窓口</li>
+        </ul>
+        <p style="margin-top:14px"><a href="../tems/" style="color:var(--brand-600);font-weight:700">tems について →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2>tOps を実際に使ってみてください</h2>
+        <p>tdoctor を14日間、Pro の全機能で無料でお試しください。テストサーバーや画面デモが必要な場合はお問い合わせください。</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-amber" href="https://update.ess.center/trial?product=tdoctor&amp;src=bronto">無料トライアルを申し込む</a>
+        <a class="btn btn-primary" href="../contact/?product=tOps">お問い合わせ</a>
+        <a class="btn btn-ghost" href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="../"><img src="../../assets/logo.png" alt="bronto"></a>
+        <p>bronto は、エネルギー設備の制御エンジン tems、リモート運用ツール tOps、配布・ライセンスプラットフォーム tVault を開発しています。</p>
+      </div>
+      <div>
+        <h4>製品</h4>
+        <ul>
+          <li><a href="../tems/">tems</a></li>
+          <li><a href="../tops/">tOps</a></li>
+          <li><a href="../tvault/">tVault</a></li>
+          <li><a href="../#packages">導入構成</a></li>
+          <li><a href="../trial/">tdoctor 無料トライアル</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a href="../contact/">お問い合わせ</a></li>
+          <li><a href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a></li>
+          <li><a href="../privacy/">個人情報保護方針</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year">2026</span> bronto. All rights reserved.</span>
+      <span>bronto.co.kr</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/main.js"></script>
+</body>
+</html>

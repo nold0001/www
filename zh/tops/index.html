@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tOps - tems 远程运维工具 | bronto</title>
+<meta name="description" content="tOps 是远程运维多个现场 tems 服务器的工具。仪表盘、监控、环境检查、带校验的配置编辑、离线模式、文件部署·备份、服务器任务、Android 应用。">
+<meta property="og:title" content="tOps - tems 远程运维工具">
+<meta property="og:url" content="https://www.bronto.co.kr/zh/tops/">
+<meta property="og:image" content="https://www.bronto.co.kr/assets/og-image.png">
+<meta property="og:site_name" content="bronto">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.bronto.co.kr/zh/tops/">
+<!-- i18n:alt -->
+<link rel="alternate" hreflang="ko" href="https://www.bronto.co.kr/tops/">
+<link rel="alternate" hreflang="en" href="https://www.bronto.co.kr/en/tops/">
+<link rel="alternate" hreflang="ja" href="https://www.bronto.co.kr/ja/tops/">
+<link rel="alternate" hreflang="zh-CN" href="https://www.bronto.co.kr/zh/tops/">
+<link rel="alternate" hreflang="x-default" href="https://www.bronto.co.kr/tops/">
+<!-- /i18n:alt -->
+<meta name="theme-color" content="#0b1626">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="bronto 首页"><img src="../../assets/logo.png" alt="bronto"></a>
+    <button class="menu-btn" aria-label="菜单" aria-expanded="false" aria-controls="nav">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="../tems/">tems</a>
+      <a href="../tops/" aria-current="page">tOps</a>
+      <a href="../tvault/">tVault</a>
+      <a href="../#solutions">应用领域</a>
+      <a href="../#packages">导入方案</a>
+      <a class="nav-trial" href="../trial/">免费试用</a>
+      <a class="btn btn-primary" href="../contact/">联系我们</a>
+      <!-- i18n:lang -->
+<details class="lang-menu">
+        <summary><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span>简体中文</span></summary>
+        <div class="lang-list"><a href="../../tops/" hreflang="ko" lang="ko" data-lang="ko">한국어</a><a href="../../en/tops/" hreflang="en" lang="en" data-lang="en">English</a><a href="../../ja/tops/" hreflang="ja" lang="ja" data-lang="ja">日本語</a><a href="../../zh/tops/" hreflang="zh-CN" lang="zh-CN" data-lang="zh" aria-current="true">简体中文</a></div>
+      </details>
+<!-- /i18n:lang -->
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero hero-sub">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">OPERATIONS</span>
+      <h1>tOps</h1>
+      <p class="lead" style="margin-bottom:12px"><b style="color:#fff">远程运维 tems 服务器的工具。</b><br>在一个界面监控多个现场，无需前往现场即可完成重启 · 配置检查与变更 · 部署。现在还支持手机(Android)和离线作业。</p>
+      <div class="pair" style="display:grid;gap:10px;margin:24px 0 28px;max-width:30em">
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;color:#d6e0ec"><b style="color:#fff">brontod</b> · 安装在 tems 服务器上的运维守护进程。负责状态采集、命令执行和权限验证。</div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;color:#d6e0ec"><b style="color:#fff">tdoctor</b> · 运维人员 PC 上的管理界面。连接多个 brontod，在一处集中运维。</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="../contact/?product=tOps">咨询 tOps</a>
+        <a class="btn btn-amber" href="../trial/">tdoctor 14 天免费试用</a>
+        <a class="btn btn-ghost" href="#features">查看功能</a>
+      </div>
+    </div>
+    <div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/zh/screens/dashboard.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/zh/screens/dashboard.png" alt="tOps 仪表盘实际界面" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 实际界面 · 演示服务器 · 仪表盘</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="stat-row">
+      <div class="stat-box"><b>100 台以上</b><span>通过组枢纽连接，节点再多也在一个界面 - 按节点状态 10 列放大显示</span></div>
+      <div class="stat-box"><b>1 秒历史</b><span>服务器每秒采集 CPU·内存·磁盘并保留 60 分钟 - 图表立即填满</span></div>
+      <div class="stat-box"><b>4 种语言</b><span>한국어 · English · 日本語 · 中文 界面</span></div>
+      <div class="stat-box"><b>PC + 手机</b><span>Windows · Linux 版 tdoctor 与 Android 应用</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" style="padding-top:40px">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">FEATURES</div>
+      <h2>运维人员每天的工作，一个程序搞定</h2>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">01</div>
+        <h3>仪表盘 · 监控</h3>
+        <p>将组内所有节点的状态汇集到一个界面，优先显示需要注意的项目。点击项目即可直接进入该节点的相应界面进行处理。</p>
+        <ul class="checks">
+          <li>站点健康评分、各节点状态卡片、tems 进程·设备通信摘要</li>
+          <li>事件 24 小时热度条与最近事件(按类型着色)</li>
+          <li>卡片拖动·放大查看，监控室模式(全屏·大字体)</li>
+          <li>节点 100 台以上 - 自动切换为紧凑视图、资源前 N 名、10 列放大窗口</li>
+          <li>按服务器设置颜色主题，避免混淆现场，连接中断单独显示</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/zh/screens/system.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/zh/screens/system.png" alt="服务器 CPU、内存、磁盘、网络趋势图实际界面" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 实际界面 · 演示服务器 · 系统监控(1 秒历史)</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">02</div>
+        <h3>tems 环境检查 <span class="newtag">NEW</span></h3>
+        <p>一次性检查 tems 配置，从 temsconfig.xml 到所有关联文件(XML·.conf)。将结果分为会导致 tems 丢弃配置或启动·控制失败的问题(错误)、可以运行但可能与预期不同的情况(警告)以及参考(信息)。</p>
+        <ul class="checks">
+          <li>进程列表 → 环境文件 → 关联文件 → 数据映射 → 设备 → 从站映射，共 6 个阶段</li>
+          <li>按规则编号·文件·行显示结果，双击即可在编辑器中打开该行</li>
+          <li>连文件之间的关系也检查，如设备 slave_id、数据映射位溢出、tpool 链接目标等</li>
+          <li>保存为报告，留作现场检查记录</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/zh/screens/tops2/check2.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/zh/screens/tops2/check2.png" alt="环境检查标签页：各阶段错误·警告·信息数量、已检查文件表、按规则的结果列表" width="1280" height="800" loading="lazy"></a>
+        <figcaption>tdoctor 实际界面 · 测试配置 · 环境检查</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">03</div>
+        <h3>带校验的配置编辑</h3>
+        <p>无需以文本方式直接修改 tems 配置文件，而是在附有各项说明和允许范围的界面中编辑。即使是数据映射、从站映射这样数千行的 XML，也能在约 1 秒内以表格打开，并按设备分开查看。</p>
+        <ul class="checks">
+          <li>按进程配置 · 以表格编辑 XML 记录，直接编辑原文(行号)</li>
+          <li>校验值的格式·范围，保存前用与环境检查相同的规则检查文件</li>
+          <li>双击错误行即可跳转到该行</li>
+          <li>从文本窗口用外部编辑器打开，在编辑器中保存后立即生效</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/zh/screens/tops2/line1.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/zh/screens/tops2/line1.png" alt="数据映射编辑：设备选择、点位定义表，下方为文件规则检查结果" width="1280" height="800" loading="lazy"></a>
+        <figcaption>tdoctor 实际界面 · 测试配置 · 数据映射编辑与规则检查</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">04</div>
+        <h3>离线模式 <span class="newtag">NEW</span></h3>
+        <p>无需连接服务器(brontod)，直接打开 PC 上的 tems 配置文件夹进行编辑和检查。适用于出发去现场前在办公室准备配置，或在无法上网的地方作业。</p>
+        <ul class="checks">
+          <li>通过连接窗口的 [离线打开…] 或启动参数指定本地工作文件夹</li>
+          <li>环境配置·环境检查使用与在线时相同的界面</li>
+          <li>之后连接服务器，通过文件部署同步到服务器</li>
+          <li>从菜单选择之前打开过的本地文件夹即可立即切换</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/zh/screens/tops2/offline2.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/zh/screens/tops2/offline2.png" alt="离线模式下的环境配置字段输入界面" width="1280" height="800" loading="lazy"></a>
+        <figcaption>tdoctor 实际界面 · 离线模式 · 环境配置</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">05</div>
+        <h3>进程控制</h3>
+        <p>实时查看 tems 各进程的状态，并远程执行启动 · 停止 · 重启。</p>
+        <ul class="checks">
+          <li>各进程运行状态 · Copy No · 资源占用</li>
+          <li>远程执行启动 · 停止 · 重启</li>
+          <li>通过控制权限申请·批准防止同时操作</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/zh/screens/monitoring.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/zh/screens/monitoring.png" alt="tems 进程与设备·从站通信状态实际界面" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 实际界面 · 演示服务器 · tems 监控</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">06</div>
+        <h3>文件部署 · 备份 · 回滚</h3>
+        <p>将新版本文件一次部署到多台服务器，并自动保存部署前的状态。出现问题时恢复到之前的状态。</p>
+        <ul class="checks">
+          <li>多服务器批量部署，按节点显示整体进度</li>
+          <li>部署前自动备份 · 回滚 · 部署后重启</li>
+          <li>存储容量上限管理</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/zh/screens/deploy.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/zh/screens/deploy.png" alt="文件部署目标节点与传输选项实际界面" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 实际界面 · 演示服务器 · 文件部署</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">07</div>
+        <h3>服务器任务 · 远程安装·升级</h3>
+        <p>将常用的检查命令注册为任务，选择服务器执行后立即查看结果。可远程在新服务器上安装 brontod 并加入组，或一次升级多台服务器。</p>
+        <ul class="checks">
+          <li>内置任务：tems·brontod 安装 · 环境 · 运维套件</li>
+          <li>其他服务器(SSH)任务 - 多个目标及各目标的 SSH·sudo 密码</li>
+          <li>brontod 升级：预先只发送变更的文件，同时替换并立即重启</li>
+          <li>嵌入式设备(dropbear·busybox)也支持远程安装·加入检查</li>
+          <li>SFTP·终端：主机密钥变化时显示新旧指纹，确认后再连接；对禁止密码登录的服务器，说明原因和解决方法</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/i18n/zh/screens/server-task.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/zh/screens/server-task.png" alt="服务器任务列表与执行结果实际界面" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tdoctor 实际界面 · 演示服务器 · 服务器任务</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">08</div>
+        <h3>账户 · 组 · 团队聊天</h3>
+        <p>为每位运维团队成员设立账户，按组划分服务器访问权限。查看同一服务器的成员之间可以直接交流。</p>
+        <ul class="checks">
+          <li>用 ID 或邮箱登录，按账户 · 组设置访问权限</li>
+          <li>组枢纽连接 - 由一个枢纽中继状态·事件，大规模组也能轻量运行</li>
+          <li>批准加入申请 · 重启·停止多个节点的 brontod · 移动到其他组</li>
+          <li>危险命令在服务器(brontod)上再次验证，通过组聊天共享处理情况</li>
+        </ul>
+      </div>
+      <figure class="figure">
+        <img src="../../assets/img/i18n/zh/team.svg" alt="运维组聊天、账户权限、控制审批、服务器再验证步骤" width="600" height="340" loading="lazy">
+        <figcaption>界面与服务器，双重确认 · 即使是界面允许的操作，服务器也会再次确认权限和值后才执行。</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">09</div>
+        <h3>搭配 tVault - 部署·许可证 <span class="newtag">NEW</span></h3>
+        <p>tdoctor 和 brontod 通过 tVault 安装和更新。客户服务器上的 brontod 只在客户负责人批准的设备上、于指定时间更新。tdoctor 通过 tVault 许可证区分 Basic · Pro。</p>
+        <ul class="checks">
+          <li>一个安装程序完成 tdoctor 安装 · 开始菜单 · 通知区域图标</li>
+          <li>更新通知：立即 · 稍后 · 跳过，查看更新内容</li>
+          <li>Pro：多节点文件部署·服务器任务 / Basic：一次一个节点</li>
+          <li>许可证文件签名·PC 验证，复制品按 Pro 试用 10 天运行</li>
+          <li>在网站申请 <a href="../trial/" style="color:var(--brand-600);font-weight:600">14 天 Pro 试用</a> - 申请后安装程序会通过邮件发送</li>
+        </ul>
+        <p style="margin-top:14px"><a href="../tvault/" style="color:var(--brand-600);font-weight:700">了解 tVault →</a></p>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/group-devices.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-devices.png" alt="tVault Web 控制台的客户设备列表：brontod·tdoctor 版本" width="1440" height="900" loading="lazy"></a>
+        <figcaption>tVault Web 控制台 · 客户设备的 brontod·tdoctor 版本</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">MOBILE <span class="newtag">NEW</span></div>
+      <h2>手机上也能用 - tdoctor Android 应用</h2>
+      <p>在 PC 版 tdoctor 上做的大部分工作都可以在手机上完成：仪表盘·系统图表·组状态板、进程启动·停止、服务器任务与命令执行、服务器文件查看·下载·上传、tems 数据(tpool·历史·采集)、部署新文件、环境检查与配置原文编辑、创建聊天室·邀请成员，乃至审计日志。tems 故障·告警和聊天消息<b>即使关闭应用 · 屏幕熄灭 · 重启之后</b>也会以手机通知送达。</p>
+    </div>
+    <div class="phones">
+      <figure class="phone"><img src="../../assets/img/i18n/zh/screens/tops2/m-dashboard.png" alt="Android 应用仪表盘：站点健康评分、进程、设备连接、资源、待确认事项" width="400" height="800" loading="lazy"><figcaption>仪表盘</figcaption></figure>
+      <figure class="phone"><img src="../../assets/img/i18n/zh/screens/tops2/m-processes.png" alt="Android 应用进程标签页" width="400" height="800" loading="lazy"><figcaption>进程 · 启动·停止·日志</figcaption></figure>
+      <figure class="phone"><img src="../../assets/img/i18n/zh/screens/tops2/m-exec_tasks.png" alt="Android 应用服务器任务" width="400" height="800" loading="lazy"><figcaption>服务器任务</figcaption></figure>
+      <figure class="phone"><img src="../../assets/img/i18n/zh/screens/tops2/m-config_check.png" alt="Android 应用环境检查结果" width="400" height="800" loading="lazy"><figcaption>环境检查</figcaption></figure>
+    </div>
+    <div class="grid grid-3" style="margin-top:48px">
+      <div class="card"><h3>PC · tdoctor</h3><p>在 Windows · Linux 运维人员 PC 上使用全部功能。韩语·英语·日语·中文界面，并附带各语言的等宽字体。</p></div>
+      <div class="card"><h3>服务器 · brontod</h3><p>安装在运行 tems 的 x64 · ARM64 Linux 服务器和嵌入式控制器上。每秒采集系统资源并保留 60 分钟。</p></div>
+      <div class="card"><h3>移动端 · Android</h3><p>韩语·英语·日语·中文界面，与 PC 相同的服务器主题·标识。密码使用 Android Keystore 加密保存并自动登录。许可证由应用直接向 tVault 注册获取，每个账户可使用 1 台 PC + 1 部手机。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">PACKAGE</div>
+      <h2>单独使用，或与 tems 搭配</h2>
+    </div>
+    <div class="duo">
+      <div class="card">
+        <h3>仅 tOps</h3>
+        <ul class="checks">
+          <li>已在运行 tems 服务器时</li>
+          <li>希望将多个现场的运维工作集中到一处时</li>
+          <li>希望无需到现场即可处理故障时</li>
+        </ul>
+      </div>
+      <div class="card with">
+        <h3>tems + tOps <span class="pill run" style="font-size:12px">推荐</span></h3>
+        <ul class="checks">
+          <li>新现场从控制到运维一次建成</li>
+          <li>与 tems 配置体系匹配的带校验编辑界面</li>
+          <li>导入 · 运维统一支持窗口</li>
+        </ul>
+        <p style="margin-top:14px"><a href="../tems/" style="color:var(--brand-600);font-weight:700">了解 tems →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2>亲自体验 tOps</h2>
+        <p>免费试用 tdoctor 14 天，畅享 Pro 全部功能。如需测试服务器或界面演示，请联系我们。</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-amber" href="https://update.ess.center/trial?product=tdoctor&amp;src=bronto">申请免费试用</a>
+        <a class="btn btn-primary" href="../contact/?product=tOps">联系我们</a>
+        <a class="btn btn-ghost" href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="../"><img src="../../assets/logo.png" alt="bronto"></a>
+        <p>bronto 开发能源设备控制引擎 tems、远程运维工具 tOps，以及部署与许可证平台 tVault。</p>
+      </div>
+      <div>
+        <h4>产品</h4>
+        <ul>
+          <li><a href="../tems/">tems</a></li>
+          <li><a href="../tops/">tOps</a></li>
+          <li><a href="../tvault/">tVault</a></li>
+          <li><a href="../#packages">导入方案</a></li>
+          <li><a href="../trial/">tdoctor 免费试用</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li><a href="../contact/">联系我们</a></li>
+          <li><a href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a></li>
+          <li><a href="../privacy/">隐私政策</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year">2026</span> bronto. All rights reserved.</span>
+      <span>bronto.co.kr</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/main.js"></script>
+</body>
+</html>

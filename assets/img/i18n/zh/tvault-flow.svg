@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" font-family="'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif">
+  <defs>
+    <filter id="sh" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="5" dy="6" stdDeviation="5" flood-color="#0b1626" flood-opacity=".22"/>
+    </filter>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#7b899c"/>
+    </marker>
+    <marker id="arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#2f78e0"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" fill="#f4f7fb"/>
+
+  <!-- 1. 릴리스 -->
+  <g filter="url(#sh)">
+    <rect x="30" y="170" width="200" height="150" rx="16" fill="#fff" stroke="#e2e8f0"/>
+  </g>
+  <text x="50" y="205" font-size="13" font-weight="700" fill="#7b899c" letter-spacing="1">RELEASE</text>
+  <text x="50" y="235" font-size="20" font-weight="800" fill="#142235">版本发布</text>
+  <text x="50" y="262" font-size="14" fill="#4a5a70">为新版本签名</text>
+  <text x="50" y="284" font-size="14" fill="#4a5a70">作为"可用版本"</text>
+  <text x="50" y="306" font-size="14" fill="#4a5a70">上传(离线密钥)</text>
+
+  <path d="M236 245 H282" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <!-- 2. tVault 서버 -->
+  <g filter="url(#sh)">
+    <rect x="290" y="130" width="230" height="230" rx="18" fill="#102036"/>
+  </g>
+  <text x="314" y="168" font-size="13" font-weight="700" fill="#6ca5f2" letter-spacing="1">tVault SERVER</text>
+  <text x="314" y="200" font-size="22" font-weight="800" fill="#fff">tVault 服务器</text>
+  <g font-size="14" fill="#c9d4e3">
+    <text x="314" y="232">· 签名的发布目录</text>
+    <text x="314" y="258">· 环(部署阶段)·目标版本</text>
+    <text x="314" y="284">· 按设备的部署指令签名</text>
+    <text x="314" y="310">· 许可证·权限·审计日志</text>
+    <text x="314" y="336">· Web 控制台(按客户)</text>
+  </g>
+
+  <!-- 링 3개 -->
+  <path d="M526 200 C560 200 560 92 600 92" fill="none" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M526 245 H598" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M526 290 C560 290 560 400 600 400" fill="none" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <g filter="url(#sh)">
+    <rect x="606" y="44" width="250" height="96" rx="14" fill="#fff" stroke="#e2e8f0"/>
+    <rect x="606" y="197" width="250" height="96" rx="14" fill="#fff" stroke="#e2e8f0"/>
+    <rect x="606" y="352" width="250" height="96" rx="14" fill="#fff" stroke="#2f78e0" stroke-width="2"/>
+  </g>
+  <rect x="606" y="44" width="8" height="96" rx="4" fill="#22b37a"/>
+  <rect x="606" y="197" width="8" height="96" rx="4" fill="#f5a524"/>
+  <rect x="606" y="352" width="8" height="96" rx="4" fill="#2f78e0"/>
+  <text x="630" y="78" font-size="17" font-weight="800" fill="#142235">① 内部 · 自动</text>
+  <text x="630" y="104" font-size="14" fill="#4a5a70">先部署到 bronto 测试设备</text>
+  <text x="630" y="125" font-size="13" fill="#7b899c">健康检查失败时环自动暂停</text>
+  <text x="630" y="231" font-size="17" font-weight="800" fill="#142235">② 试点 · 客户审批</text>
+  <text x="630" y="257" font-size="14" fill="#4a5a70">客户的几台测试服务器</text>
+  <text x="630" y="278" font-size="13" fill="#7b899c">一个 [下一个环] 按钮推进</text>
+  <text x="630" y="386" font-size="17" font-weight="800" fill="#142235">③ 客户生产 · 客户审批</text>
+  <text x="630" y="412" font-size="14" fill="#4a5a70">只在客户·部门负责人批准的</text>
+  <text x="630" y="433" font-size="14" fill="#4a5a70">设备上，于指定时间</text>
+
+  <!-- 메일 승인 -->
+  <path d="M862 400 H900" stroke="#2f78e0" stroke-width="2.5" marker-end="url(#arb)"/>
+  <g filter="url(#sh)">
+    <rect x="906" y="340" width="264" height="140" rx="16" fill="#e9f1fd" stroke="#2f78e0"/>
+  </g>
+  <g transform="translate(926 360)" fill="none" stroke="#2361bd" stroke-width="2.2" stroke-linejoin="round">
+    <rect x="0" y="0" width="34" height="24" rx="4" fill="#fff"/>
+    <path d="M0 2 L17 14 L34 2"/>
+  </g>
+  <text x="972" y="380" font-size="16" font-weight="800" fill="#2361bd">负责人邮件审批</text>
+  <g font-size="13.5" fill="#142235">
+    <text x="926" y="410">链接 → 6 位确认码</text>
+    <text x="926" y="432">→ 选择设备(主机·IP)</text>
+    <text x="926" y="454">→ 设定安装时间 → 批准</text>
+  </g>
+
+  <!-- 장비 -->
+  <path d="M862 92 H1000 V150" fill="none" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M862 245 H902" stroke="#7b899c" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M1038 334 V300" stroke="#2f78e0" stroke-width="2.5" marker-end="url(#arb)"/>
+  <g filter="url(#sh)">
+    <rect x="906" y="156" width="264" height="138" rx="16" fill="#fff" stroke="#e2e8f0"/>
+  </g>
+  <text x="926" y="190" font-size="13" font-weight="700" fill="#7b899c" letter-spacing="1">DEVICES</text>
+  <text x="926" y="218" font-size="19" font-weight="800" fill="#142235">现场设备</text>
+  <text x="926" y="244" font-size="14" fill="#4a5a70">代理确认指令后安装</text>
+  <text x="926" y="266" font-size="14" fill="#4a5a70">→ 健康检查 → 失败则回滚</text>
+  <text x="926" y="286" font-size="13" fill="#7b899c">Windows · Linux(x64·ARM64)</text>
+
+  <!-- 결과 메일 -->
+  <path d="M1170 225 C1195 225 1195 505 1060 505 H340" fill="none" stroke="#22b37a" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#ar)"/>
+  <rect x="380" y="490" width="430" height="28" rx="14" fill="#fff" stroke="#22b37a"/>
+  <text x="595" y="509" font-size="13.5" font-weight="700" fill="#126b45" text-anchor="middle">完成后向审批人发送结果邮件 - 各设备更新时间 · 失败详情</text>
+</svg>

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tVault - Software deployment, update and licensing platform | bronto</title>
+<meta name="description" content="tVault is a platform that manages software installation, updates and licensing for site servers and operator PCs in one place. Signed deployments, staged (ring) deployment, customer email approval, per-device result emails, customer-centered web console.">
+<meta property="og:title" content="tVault - Software deployment, update and licensing platform">
+<meta property="og:description" content="Release safely, and update only the devices the customer approved. Signed deployments and licensing in one place.">
+<meta property="og:url" content="https://www.bronto.co.kr/en/tvault/">
+<meta property="og:image" content="https://www.bronto.co.kr/assets/og-image.png">
+<meta property="og:site_name" content="bronto">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.bronto.co.kr/en/tvault/">
+<!-- i18n:alt -->
+<link rel="alternate" hreflang="ko" href="https://www.bronto.co.kr/tvault/">
+<link rel="alternate" hreflang="en" href="https://www.bronto.co.kr/en/tvault/">
+<link rel="alternate" hreflang="ja" href="https://www.bronto.co.kr/ja/tvault/">
+<link rel="alternate" hreflang="zh-CN" href="https://www.bronto.co.kr/zh/tvault/">
+<link rel="alternate" hreflang="x-default" href="https://www.bronto.co.kr/tvault/">
+<!-- /i18n:alt -->
+<meta name="theme-color" content="#0b1626">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="bronto home"><img src="../../assets/logo.png" alt="bronto"></a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="../tems/">tems</a>
+      <a href="../tops/">tOps</a>
+      <a href="../tvault/" aria-current="page">tVault</a>
+      <a href="../#solutions">Applications</a>
+      <a href="../#packages">Packages</a>
+      <a class="nav-trial" href="../trial/">Free trial</a>
+      <a class="btn btn-primary" href="../contact/">Contact</a>
+      <!-- i18n:lang -->
+<details class="lang-menu">
+        <summary><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span>English</span></summary>
+        <div class="lang-list"><a href="../../tvault/" hreflang="ko" lang="ko" data-lang="ko">한국어</a><a href="../../en/tvault/" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><a href="../../ja/tvault/" hreflang="ja" lang="ja" data-lang="ja">日本語</a><a href="../../zh/tvault/" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a></div>
+      </details>
+<!-- /i18n:lang -->
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero hero-sub">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">DEPLOY · UPDATE · LICENSE</span>
+      <h1>tVault</h1>
+      <p class="lead" style="margin-bottom:12px"><b style="color:#fff">Software installation, updates and licensing in one place.</b><br> New versions are signed and published safely, and customer servers update at the scheduled time <em style="font-style:normal;color:var(--brand-light)">only on the devices the customer approved</em>. See at a glance, for each customer, who runs which version and when each license ends.</p>
+      <div style="display:grid;gap:10px;margin:24px 0 28px;max-width:32em">
+        <div class="pair-box"><b>tVault server</b> · Signed release catalog, deployment stages (rings), licenses and entitlements, customer-centered web console</div>
+        <div class="pair-box"><b>tVault agent</b> · Handles installation, updates and rollback on site servers (Linux) and operator PCs (Windows)</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="../contact/?product=tVault">Ask about tVault</a>
+        <a class="btn btn-ghost" href="#features">See features</a>
+      </div>
+    </div>
+    <div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/group.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group.png" alt="tVault web console: customer tree on the left and customer overview (device and user counts, product version distribution, deployment approval requests)" width="1440" height="1000"></a>
+        <figcaption>Actual tVault web console screen · demo data · customer overview</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 숫자로 보는 tVault -->
+<section class="section" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="stat-row">
+      <div class="stat-box"><b>5 signing keys</b><span>Releases, catalogs and licenses are signed with role-specific keys - even if the server is breached, fake packages will not install</span></div>
+      <div class="stat-box"><b>Per device</b><span>The customer's contact approves by choosing devices by host name and IP (grouped by department, even for 100+ devices)</span></div>
+      <div class="stat-box"><b>Automatic rollback</b><span>If the post-install health check fails, the device returns to the previous version and that deployment stage is paused</span></div>
+      <div class="stat-box"><b>Every action recorded</b><span>Each action carries a note and is kept in a tamper-proof audit log</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 해결하는 문제 -->
+<section class="section soft">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">PROBLEMS</div>
+      <h2>Taking the worry out of field software</h2>
+      <p>As site servers and operator PCs multiply, installation, updates and license management become too much to handle by hand.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card pain"><h3>Publishing a new version changes every server at once</h3><p>A customer's production server restarting suddenly during business hours is a problem. tVault widens rollouts from internal to pilot to customers with <b>rings (deployment stages)</b>, and customers update <b>only the devices they approved</b>.</p></div>
+      <div class="card pain"><h3>Logging in remotely to install at every customer</h3><p>Run one installer containing an install key, and registration, service setup and first installation are all done. After that the agent handles updates and rolls itself back on failure.</p></div>
+      <div class="card pain"><h3>No idea who uses what, or when licenses end</h3><p>Grant entitlements (edition, term, expiry behavior) per customer, department, user or device, and see the entitlements actually applied and installed versions per device on one screen.</p></div>
+      <div class="card pain"><h3>Still used after the trial ends · used by copying</h3><p>Licenses are verified with signed tokens and a PC-specific value. The program itself blocks copies, expired terms and revocations, and can even order deletion on a departed employee's personal PC.</p></div>
+      <div class="card pain"><h3>Phoning to check whether updates happened</h3><p>When all approved devices are done, the contact receives a result email with the <b>update time of each device</b>. If some devices are switched off, an interim report is sent first.</p></div>
+      <div class="card pain"><h3>Air-gapped sites without internet</h3><p>Bring updates in with a single signed bundle file. Verification is the same as online, and licenses stay valid without the server within the offline grace period.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 흐름 -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">HOW IT WORKS</div>
+      <h2>Release and deployment are separate</h2>
+      <p>Releasing means publishing "a version that can be used"; deploying means deciding "who gets it, and when". The administrator sets a target version for each ring and widens the rollout with [Next ring].</p>
+    </div>
+    <figure class="figure">
+      <img src="../../assets/img/i18n/en/tvault-flow.svg" alt="Release → tVault server → Ring 1 internal (automatic), Ring 2 pilot (customer approval), Ring 3 customers (customer approval) → contact email approval → field devices → result email" width="1200" height="520" loading="lazy">
+    </figure>
+    <div class="steps" style="margin-top:36px">
+      <div class="card"><h3>Releases</h3><p>Built packages are signed with an offline key and published. No device changes yet.</p></div>
+      <div class="card"><h3>Set the ring target</h3><p>Set the new version on the internal test device ring. If the post-install health check fails, that ring pauses automatically.</p></div>
+      <div class="card"><h3>Customer approval</h3><p>Moving to a customer ring sends an approval email to the contact, who approves by choosing devices and an installation time.</p></div>
+      <div class="card"><h3>Check results</h3><p>Results are collected from device reports, emailed to the approver and kept in the web console.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">FEATURES</div>
+      <h2>What tVault does</h2>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">01</div>
+        <h3>Customer-centered web console <span class="newtag">NEW</span></h3>
+        <p>Pick a customer (group) in the tree on the left, and that customer's devices, users, entitlements, deployments and notes come together in tabs. Departments (subgroups) are included, which makes it easy to handle work customer by customer.</p>
+        <ul class="checks">
+          <li>Customer and department tree - collapse and expand, name search, device counts including subgroups</li>
+          <li>Overview: device and user counts, version distribution per product, deployment approvals in progress</li>
+          <li>Devices tab: grouped by department, with host name, IP, installed version and last contact</li>
+          <li>Script-free screens + two-step authentication (password + OTP)</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/group-devices.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-devices.png" alt="Customer devices tab: host name per department, IP, device name, installed products and versions, last contact" width="1440" height="900" loading="lazy"></a>
+        <figcaption>Customer devices tab · sorted by department and host name, with IP and installed version</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">02</div>
+        <h3>Selective deployment - rings (deployment stages) <span class="newtag">NEW</span></h3>
+        <p>Set a default behavior per product. With <b>Hold</b>, only devices assigned to a ring update; with <b>Follow</b>, devices follow new versions immediately. Each ring targets customers, departments, users or devices, with a target version and a method (automatic / customer approval).</p>
+        <ul class="checks">
+          <li>The ring for the most specific target applies (device &gt; user &gt; department &gt; customer)</li>
+          <li>Widen the stage with a single [Next ring] button</li>
+          <li>Set a ring's target to an older version and only those devices roll back</li>
+          <li>A failed post-install health check (rollback) pauses the ring automatically</li>
+          <li>The server blocks it too - packages that are not the target are not served</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/deploy-rings.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/deploy-rings.png" alt="Deployment screen: product default behavior, Ring 1 bronto lab (automatic), Ring 2 pilot (customer approval), Ring 3 customer production (customer approval) and target versions" width="1440" height="1400" loading="lazy"></a>
+        <figcaption>Deployment screen · product default behavior and three rings</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">03</div>
+        <h3>Email approval by the customer's contact <span class="newtag">NEW</span></h3>
+        <p>When a new version is set on a customer-approval ring, an email goes to the approver at that customer (or department). Without logging in, the contact opens the link, enters <b>the 6-digit confirmation code sent to that email</b>, then chooses devices and an installation time to approve or put on hold.</p>
+        <ul class="checks">
+          <li>Device table: grouped by department, with <b>host name · IP</b> · device name · current version</li>
+          <li>Select per device, exclude by department - easy to tell apart even with 100+ devices</li>
+          <li>Installation time: now, or a date and time (overnight maintenance window)</li>
+          <li>A separate link per contact, valid for 7 days, final once decided</li>
+          <li>If there is no contact or approval was confirmed by phone, an administrator approves on their behalf with a note</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/mail-decide.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/mail-decide.png" alt="Customer approval screen: changes, device table by department (host name, IP, current version), installation time, approver name, approve and hold buttons" width="1200" height="1472" loading="lazy"></a>
+        <figcaption>Approval screen opened from the email link · choose devices and time after entering the confirmation code</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">04</div>
+        <h3>Per-device results and result emails <span class="newtag">NEW</span></h3>
+        <p>When all approved devices finish updating, a result email goes to the approver right away, listing previous → current version, result and <b>update time</b> for each device. If some devices are switched off, an interim report is sent after a set time (1 hour by default), and a final report follows when everything is done.</p>
+        <ul class="checks">
+          <li>Counts of completed, failed and in-progress devices, with failure details</li>
+          <li>Opening the same link again shows the result table</li>
+          <li>Holds, expired requests and result copies sent to the administrator notification address</li>
+          <li>Interim report timing, approval deadline and reminders adjustable in settings</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/mail-result.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/mail-result.png" alt="Approval result screen: approved/excluded per device, result (completed, in progress), update time" width="1200" height="1093" loading="lazy"></a>
+        <figcaption>Result screen · update time per device (the same table appears in the email)</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">05</div>
+        <h3>One-step install · automatic updates · automatic rollback</h3>
+        <p>Run an installer whose file name contains the install key, and device registration, service registration and first installation are all done. From then on the agent checks signatures every 10 minutes and keeps to the target version.</p>
+        <ul class="checks">
+          <li>Install → health check → automatic rollback to the previous version on failure</li>
+          <li>Data folders to preserve are kept during updates and removal</li>
+          <li>Windows: run, close, update and remove from the notification area icon</li>
+          <li>User-chosen updates: now · later · skip (required versions cannot be skipped)</li>
+          <li>Release notes are shown as-is in the notification</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/device.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/device.png" alt="Device details: host name, IP, connection IP, installation status (installation time, report time), entitlements actually applied" width="1440" height="1000" loading="lazy"></a>
+        <figcaption>Device details · host name, IP, installation time and entitlements actually applied</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">06</div>
+        <h3>Licenses · entitlements</h3>
+        <p>Define editions (Basic, Pro, etc.), features and roles per product, and grant entitlements to customers, departments, users and devices. Entitlements reach each device as a signed license token that the program checks itself.</p>
+        <ul class="checks">
+          <li>Term: perpetual · subscription · fixed term · trial (approval required)</li>
+          <li>Behavior on expiry: continue (updates only stop) · downgrade edition · block launch · remove</li>
+          <li>Offline grace period - what was paid for keeps working even if the server disappears</li>
+          <li>A PC-specific value detects copies · revocation via a revocation list</li>
+          <li>Employee departure: revoke entitlements, company devices become shared, personal devices are ordered to delete</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/ents.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/ents.png" alt="Entitlements screen: grant fields (edition, updates, term, behavior on expiry) and entitlement list" width="1440" height="1000" loading="lazy"></a>
+        <figcaption>Entitlements screen · edition, term and behavior on expiry</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">07</div>
+        <h3>Notes on every action · audit log <span class="newtag">NEW</span></h3>
+        <p>Actions that are hard to undo or affect customers, such as revocation, disabling devices, deployment targets and approving on someone's behalf, always require a note (reason, requester, contact details). The customer's Notes · History tab shows notes and action records at a glance.</p>
+        <ul class="checks">
+          <li>Customer notes - calls, visits and commitments</li>
+          <li>Hash-chained audit log - cannot be altered later</li>
+          <li>Approval requests: who decided, email, IP, chosen devices, installation time</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/group-notes.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-notes.png" alt="Customer Notes · History tab: leave a note, and notes and action records scoped to the customer" width="1440" height="1000" loading="lazy"></a>
+        <figcaption>Notes · History tab · records for customers, departments, users and devices in one place</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">08</div>
+        <h3>Deployments protected by signatures</h3>
+        <p>Role-specific signing keys guard against attacks on the update path. Devices trust only the root of trust they first received, and install nothing unsigned even if the server address changes.</p>
+        <ul class="checks">
+          <li>The release key stays off the server (offline) - no fake packages even if the server is breached</li>
+          <li>Package length and hash checks, protection against rollback to old catalogs</li>
+          <li>Per-device deployment orders are signed too - chosen only from signed versions</li>
+          <li>Only requests signed with the device key are accepted · lost devices can be disabled</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/approval-result.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/approval-result.png" alt="Approval request details in the admin screen: contact, decision, installation time, result summary and per-device results" width="1440" height="900" loading="lazy"></a>
+        <figcaption>Approval request details in the admin screen · who approved what, and when</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">09</div>
+        <h3>Internet trial · built-in mail <span class="newtag">NEW</span></h3>
+        <p>A single [Free trial] button on your website takes visitors through application → email verification → automatic approval → a personal install key, with no human involved. The trial policy (edition, days) stands in for approval and is recorded in the audit log. The tVault server sends the emails itself, with no external service.</p>
+        <ul class="checks">
+          <li>An installer with the install key in its file name - customers just download and run it, on 1 PC within 7 days</li>
+          <li>Blocks repeat applications from the same email or PC, with block lists for emails, domains and PCs</li>
+          <li>Emails 3 days before and on the last day, plus in-app notices · blocked when it ends</li>
+          <li>Trials screen: counts by status, search by referral source, installed PC and marketing consent, conversion to full license, revocation and term adjustment</li>
+          <li>Built-in mail sending (DKIM signed) - test and notice emails; promotional emails only to those who consented, with an (Ad) label and unsubscribe link</li>
+        </ul>
+        <p style="margin-top:14px"><a href="../trial/" style="color:var(--brand-600);font-weight:700">See it yourself with the tdoctor trial →</a></p>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/trials.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/trials.png" alt="Trials screen: counts for all, unverified, active, ended, revoked and converted, quick filters, search conditions, application list, block list" width="1440" height="830" loading="lazy"></a>
+        <figcaption>Trials · application list and quick filters (fictitious applicants)</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">10</div>
+        <h3>Status table · two-person approval · admin tools <span class="newtag">NEW</span></h3>
+        <p>Expand customer → department → user → device in one table to see installed versions and update status (latest, pending, held, failed) per product. Actions that are hard to undo can be set, per group of actions, to require approval from another administrator.</p>
+        <ul class="checks">
+          <li>Status table: groups only · down to users · down to devices, the reason behind each cell's target, fix entitlements in place</li>
+          <li>Two-person approval: trial and fixed-term entitlements, permanent deletion, audit log deletion, administrator accounts</li>
+          <li>Group structure chart: drag to move (with subgroups) · rename · create many groups at once</li>
+          <li>List → detail (read-only → [Edit]) screens, run CLI commands from the web, bulk deletion</li>
+          <li>Mobile app (APK) registration, signature check, version management and download from the web</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/overview.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/overview.png" alt="Status table: tdoctor, brontod and tvault-agent installed versions and status per group, user and device" width="1440" height="900" loading="lazy"></a>
+        <figcaption>Status table · versions and update status per customer, department and device</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 화면 모음 -->
+<section class="section soft">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">SCREENS</div>
+      <h2>More screens</h2>
+      <p>All are actual screens captured with demo data. Click to enlarge. The tVault web console is currently available in Korean.</p>
+    </div>
+    <div class="screen-grid">
+      <figure class="shot"><a href="../../assets/img/screens/tvault/dash.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/dash.png" alt="Status: pending approvals, device count, installation problems, entitlements ending soon, versions being deployed" width="1440" height="1000" loading="lazy"></a><figcaption>Status · installation problems and entitlements ending soon</figcaption></figure>
+      <figure class="shot"><a href="../../assets/img/screens/tvault/group-deploy.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-deploy.png" alt="Department deployment tab: approver emails, rings this department belongs to, approval requests" width="1440" height="900" loading="lazy"></a><figcaption>Department deployment tab · approvers and rings</figcaption></figure>
+      <figure class="shot"><a href="../../assets/img/screens/tvault/approval-proxy.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/approval-proxy.png" alt="Pending approval requests: administrator approves or holds on behalf, resend link, cancel" width="1440" height="900" loading="lazy"></a><figcaption>Approve on behalf · note required</figcaption></figure>
+      <figure class="shot"><a href="../../assets/img/screens/tvault/mail-view.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/mail-view.png" alt="First screen when the contact opens the email link: request details and getting a confirmation code" width="1200" height="900" loading="lazy"></a><figcaption>First screen when the contact opens the link · get a confirmation code</figcaption></figure>
+      <figure class="shot"><a href="../../assets/img/screens/tvault/deploy-requests.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/deploy-requests.png" alt="Customer approval request list: approval unit, status, device count, result" width="1290" height="500" loading="lazy"></a><figcaption>Customer approval request list · also shows when there is no contact</figcaption></figure>
+      <figure class="shot"><a href="../../assets/img/screens/tvault/settings.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/settings.png" alt="Settings: result emails (interim report, approval deadline, reminders, administrator notification address) and approval method (two-person approval)" width="1440" height="700" loading="lazy"></a><figcaption>Settings · result emails and two-person approval</figcaption></figure>
+    </div>
+    <div class="section-head" style="margin:56px 0 28px">
+      <h2 style="font-size:24px">On your phone too</h2>
+      <p>The web console and approval screens fit phone screens. The web console can be <b>installed as an app on the home screen</b> (PWA), and approval requests, deployment holds, new trials and installation failures arrive instantly as <b>push notifications</b>. Approve and check results even on a business trip.</p>
+    </div>
+    <div class="phones">
+      <figure class="phone"><img src="../../assets/img/screens/tvault/phone-approve.png" alt="Approval result screen opened on a phone" width="390" height="844" loading="lazy"><figcaption>Contact approval screen</figcaption></figure>
+      <figure class="phone"><img src="../../assets/img/screens/tvault/phone-group.png" alt="Customer overview viewed on a phone" width="390" height="844" loading="lazy"><figcaption>Admin web console · customer overview</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 사양 -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">SPEC</div>
+      <h2>Components and supported environments</h2>
+    </div>
+    <table class="spec">
+      <tr><th>tVault server</th><td>Linux · PostgreSQL (default) or SQLite (small deliveries) · packages in file storage · built-in mail sending (DKIM signed)</td></tr>
+      <tr><th>Agent</th><td>Windows (service + notification area icon) · Linux x64 · ARM64 (systemd) · the agent updates itself too</td></tr>
+      <tr><th>Web console</th><td>Customer tree and tabs, status table, deployments, approvals, entitlements, devices, trials, mail and audit log · two-person approval · command execution · password + OTP two-step authentication · install as an app on your phone (PWA) · push notifications</td></tr>
+      <tr><th>CLI</th><td>Tasks that need signing keys - building packages, release (signing), root key rotation, bundle import - are CLI only</td></tr>
+      <tr><th>Deployment</th><td>Default behavior per product (Hold · Follow) · rings (targets, target version, automatic/customer approval, pause) · signed per-device deployment orders · download enforcement on the server</td></tr>
+      <tr><th>Customer approval</th><td>Email link per contact · 6-digit confirmation code · per-device selection (host name, IP) · installation time · result emails (interim, final)</td></tr>
+      <tr><th>Licensing</th><td>Editions, features and roles · perpetual, subscription, fixed term, trial · expiry behavior · offline grace period · PC-specific value · revocation list</td></tr>
+      <tr><th>Installation path</th><td>Install key link → run installer → registration, service, first installation · signed bundle files for air-gapped networks</td></tr>
+      <tr><th>Internet trial</th><td>Public application screen · email verification · automatic approval by policy · personal install key (1 PC) · repeat application blocking · ending notice emails · conversion to full license and revocation</td></tr>
+      <tr><th>Mobile app</th><td>Android APK registration, signature (v2, v3) check, version management and web download · the app registers with an install key for a phone-only license</td></tr>
+      <tr><th>Works with</th><td>Deployment of tOps (brontod · tdoctor) and tdoctor Basic/Pro licenses · can also be delivered on the customer's own servers</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- 자주 묻는 질문 -->
+<section class="section soft">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">FAQ</div>
+      <h2>FAQ</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Do customer servers change as soon as a new version is published?</summary><p>No. If the product's default behavior is "Hold", only devices assigned to a ring change. On a customer-approval ring, only the devices the contact approved change, starting at the chosen time.</p></details>
+      <details><summary>What if the contact's email is forwarded to someone else?</summary><p>The link alone cannot make a decision. A 6-digit confirmation code is sent to the email address that received the link, and the decision screen opens only after that code is entered. Links for addresses removed from the contacts are blocked.</p></details>
+      <details><summary>What if something goes wrong during an update?</summary><p>If the post-install health check fails, the device returns to the previous version by itself, and that ring pauses automatically so the problem does not spread to other devices. The administrator checks the cause, leaves a note and turns it back on.</p></details>
+      <details><summary>Does it work at sites without internet?</summary><p>Yes. Updates come in as signed bundle files, and licenses stay valid without the server within the offline grace period. There is also a delivery option with a separate tVault server inside the customer's network.</p></details>
+      <details><summary>Can trials be opened automatically from our website?</summary><p>Yes. Set a trial policy (edition, days, offline grace period) per product and link your website button to the application screen, and application → email verification → installer all happen automatically. People only need to convert or revoke trials in the Trials screen. bronto's <a href="../trial/" style="color:var(--brand-600);text-decoration:underline">tdoctor trial</a> runs exactly this way.</p></details>
+      <details><summary>Can I use tVault alone, without tOps or tems?</summary><p>Yes. With just a manifest (install location, service commands, health check method), any program can be deployed, updated and licensed with tVault.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2>Deployment and licensing, now in one place</h2>
+        <p>Tell us how many sites you have and how you operate them, and we will walk you through the workflow on real screens.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="../contact/?product=tVault">Contact</a>
+        <a class="btn btn-ghost" href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="../"><img src="../../assets/logo.png" alt="bronto"></a>
+        <p>bronto develops tems, a control engine for energy facilities; tOps, a remote operations tool; and tVault, a deployment and licensing platform.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="../tems/">tems</a></li>
+          <li><a href="../tops/">tOps</a></li>
+          <li><a href="../tvault/">tVault</a></li>
+          <li><a href="../#packages">Packages</a></li>
+          <li><a href="../trial/">tdoctor free trial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="../contact/">Contact</a></li>
+          <li><a href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a></li>
+          <li><a href="../privacy/">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year">2026</span> bronto. All rights reserved.</span>
+      <span>bronto.co.kr</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/main.js"></script>
+</body>
+</html>
