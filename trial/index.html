@@ -60,9 +60,9 @@
       </div>
       <div class="actions">
         <a class="btn btn-primary btn-lg" href="https://update.ess.center/trial?product=tdoctor&amp;src=bronto">평가판 신청하기</a>
-        <a class="btn btn-ghost" href="#steps">진행 순서 보기</a>
+        <a class="btn btn-ghost" href="#requirements">PC 사양 보기</a>
       </div>
-      <p class="hero-note">신청 화면은 브론토의 배포 서버 <b>update.ess.center</b> 에서 열립니다.</p>
+      <p class="hero-note">지금은 <b>Windows PC 용 평가판</b>만 신청할 수 있습니다. 신청 화면은 브론토의 배포 서버 <b>update.ess.center</b> 에서 열립니다.</p>
     </div>
     <div>
       <figure class="shot">
@@ -70,6 +70,27 @@
         <figcaption>tdoctor 실제 화면 · 데모 서버 · 현황판</figcaption>
       </figure>
     </div>
+  </div>
+</section>
+
+<!-- 설치 전 확인 -->
+<section class="section soft" id="requirements">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">BEFORE YOU START</div>
+      <h2>지금은 Windows PC 용 평가판만 신청할 수 있습니다</h2>
+      <p>평가판 설치 파일은 Windows 64비트용 하나입니다. Linux 판 tdoctor 와 Android 앱은 평가판에 들어 있지 않으며, 필요하면 <a href="../contact/?product=tOps&amp;type=평가판·구매">문의</a>해 주세요. 신청하기 전에 아래 사양을 확인해 주세요.</p>
+    </div>
+    <table class="spec">
+      <tr><th>Windows 버전</th><td><b>Windows 10 · Windows 11 (64비트)</b> · Home · Pro · Enterprise 모두 됩니다. Snapdragon 등 Windows 11 ARM PC 는 x64 에뮬레이션으로 실행됩니다.</td></tr>
+      <tr><th>지원하지 않는 환경</th><td>Windows 7 · 8.1, 32비트 Windows, macOS, Linux PC</td></tr>
+      <tr><th>CPU · 메모리</th><td>64비트 CPU · 메모리 4GB 이상 권장</td></tr>
+      <tr><th>디스크</th><td>여유 공간 500MB 이상 (설치 후 약 120MB, 업데이트 때 이전 버전을 보관합니다)</td></tr>
+      <tr><th>화면</th><td>1366 × 768 이상 권장 (1920 × 1080 이상이면 현황판을 한눈에 볼 수 있습니다)</td></tr>
+      <tr><th>권한</th><td>설치할 때 <b>관리자 권한</b>이 필요합니다("디바이스를 변경하도록 허용" 에서 [예]). 회사 PC 라 막혀 있으면 전산 담당자에게 요청해 주세요.</td></tr>
+      <tr><th>인터넷</th><td>설치·라이선스 확인·업데이트에 <code>update.ess.center</code> (HTTPS, 443 포트) 로 나가는 연결이 필요합니다.</td></tr>
+      <tr><th>tems 서버에 붙일 때</th><td>오프라인 모드는 PC 만으로 됩니다. 서버를 원격으로 운영하려면 tems 서버에 <b>brontod</b> 가 있고, PC 에서 그 서버에 닿는 사내망 또는 VPN 이 있어야 합니다.</td></tr>
+    </table>
   </div>
 </section>
 
@@ -84,8 +105,8 @@
     <div class="steps">
       <div class="card"><h3>신청</h3><p>[평가판 신청하기]를 눌러 이름·이메일을 쓰고(회사·연락처는 선택) 개인정보 수집·이용에 동의합니다.</p></div>
       <div class="card"><h3>이메일 인증</h3><p>메일 <b>"[tdoctor] 평가판 이메일 확인"</b>의 링크를 열고 [평가판 시작]을 누릅니다.</p></div>
-      <div class="card"><h3>설치 파일 받기</h3><p>[Windows 설치 파일 내려받기]를 누릅니다. 같은 링크가 메일로도 옵니다. 설치 키는 7일 동안 PC 1대에 쓸 수 있습니다.</p></div>
-      <div class="card"><h3>실행</h3><p>받은 <code>tdoctor-setup-…exe</code> 를 실행하고 "디바이스를 변경하도록 허용" 에서 [예]. 작업 표시줄에 tVault 아이콘이 생기면 끝입니다.</p></div>
+      <div class="card"><h3>설치 파일 받기</h3><p>[Windows 설치 파일 내려받기]를 누릅니다. 같은 링크가 메일로도 옵니다. 설치 키는 7일 동안 PC 1대에서 쓸 수 있습니다.</p></div>
+      <div class="card"><h3>실행</h3><p>받은 <code>tdoctor-setup-....exe</code> 파일을 실행하고, "디바이스를 변경하도록 허용" 에서 [예] 를 누릅니다. 그리고, 작업 표시줄에 tVault 아이콘이 생기면 설치가 완료된 것입니다.</p></div>
     </div>
     <div class="screen-grid trial-shots">
       <figure class="shot"><a href="../assets/img/screens/tvault/trial-form.png" target="_blank" rel="noopener"><img src="../assets/img/screens/tvault/trial-form.png" alt="평가판 신청 화면: 이름, 회사, 이메일, 연락처, 개인정보 수집·이용 동의, 광고성 정보 수신 동의(선택)" width="640" height="1000" loading="lazy"></a><figcaption>1 · 신청 화면</figcaption></figure>
@@ -105,7 +126,7 @@
     <div class="grid grid-3">
       <div class="card"><h3>오프라인으로 바로</h3><p>서버가 없어도 됩니다. 접속 창의 <b>[오프라인으로 열기…]</b>로 PC 의 tems 설정 폴더를 열어 <b>환경 점검</b>과 <b>설정 편집</b>을 해 보세요.</p></div>
       <div class="card"><h3>tems 서버에 붙여서</h3><p>운영 중인 tems 서버에 <b>brontod</b> 가 있으면 접속해 현황판·모니터링·프로세스 제어·파일 배포·서버 작업까지 실제 운영 흐름을 확인합니다.</p></div>
-      <div class="card"><h3>자동 업데이트</h3><p>평가판 동안 새 버전이 나오면 알림 영역의 tVault 아이콘이 알려 줍니다. 지금·나중에·건너뛰기를 고르고 변경 사항을 볼 수 있습니다.</p></div>
+      <div class="card"><h3>자동 업데이트</h3><p>평가판 동안 새 버전이 나오면 알림 영역의 tVault 아이콘이 알려 줍니다. 지금·나중에·건너뛰기를 선택할 수 있고 변경 사항을 볼 수 있습니다.</p></div>
     </div>
     <p class="more-link"><a href="../tops/">tOps 기능 자세히 보기 →</a></p>
   </div>
@@ -119,9 +140,9 @@
       <h2>평가판이 끝나면</h2>
     </div>
     <div class="grid grid-3">
-      <div class="card"><h3>미리 알려 드립니다</h3><p>끝나기 <b>3일 전</b>과 <b>마지막 날</b> 메일을 보내고, tdoctor 알림 영역에도 "평가판이 N일 남음 · 문의하기" 를 띄웁니다.</p></div>
-      <div class="card"><h3>끝나면 멈춥니다</h3><p>끝난 날부터 tdoctor 화면이 잠깁니다. 서버나 tems 설정은 건드리지 않으며, 자동 결제도 없습니다.</p></div>
-      <div class="card"><h3>정식으로 이어 쓰기</h3><p>구매를 문의하시면 같은 PC 에서 다시 설치할 필요 없이 정식 라이선스로 바꿔 드립니다(Basic · Pro, 영구 · 기간제).</p></div>
+      <div class="card"><h3>미리 알려 드립니다</h3><p>끝나기 <b>3일 전</b>과 <b>마지막 날</b> 메일을 보내드리고, tdoctor 알림 영역에도 "평가판이 N일 남음 · 문의하기" 를 띄웁니다.</p></div>
+      <div class="card"><h3>끝나면 멈춥니다</h3><p>평가판이 끝난 날부터 tdoctor 화면이 잠깁니다. 서버나 tems 설정은 건드리지 않으며, 자동 결제도 없습니다.</p></div>
+      <div class="card"><h3>정식으로 이어 쓰기</h3><p>구매를 문의하시면 같은 PC 에서 다시 설치할 필요 없이 정식 라이선스로 전환해 드립니다(Basic · Pro, 영구 · 기간제).</p></div>
     </div>
   </div>
 </section>
@@ -137,7 +158,8 @@
       <details><summary>인증 메일이 오지 않아요.</summary><p>스팸함·프로모션함에서 제목 <b>"[tdoctor] 평가판 이메일 확인"</b> 을 먼저 찾아 주세요. 그래도 없으면 <a href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a> 로 신청한 이메일 주소를 알려 주세요.</p></details>
       <details><summary>tdoctor 만으로 쓸 수 있나요? 서버가 필요한가요?</summary><p>오프라인 모드(환경 점검·설정 편집)는 tdoctor 만으로 됩니다. 서버를 원격으로 운영하려면 tems 서버에 brontod 가 있어야 합니다. 시험 서버가 필요하면 <a href="../contact/?product=tOps&amp;type=평가판·구매">문의</a>해 주세요.</p></details>
       <details><summary>다른 PC 에도 깔 수 있나요?</summary><p>평가판은 신청 한 건에 PC 1대입니다. 같은 이메일로 다시 신청하거나, 같은 PC 에서 이메일만 바꿔 다시 받을 수는 없습니다. 여러 대에서 써 보려면 문의해 주세요.</p></details>
-      <details><summary>설치 파일을 복사해서 다른 PC 에서 실행하면요?</summary><p>라이선스는 서명된 토큰과 PC 고유 값으로 확인합니다. 복사한 프로그램은 평가판 기간과 상관없이 "복사본" 으로 표시되고 짧게만 돈 뒤 멈춥니다.</p></details>
+      <details><summary>설치 파일을 복사해서 다른 PC 에서 실행하면요?</summary><p>라이선스는 서명된 토큰과 PC 고유 값으로 확인합니다. 복사한 프로그램은 평가판 기간과 상관없이 "복사본" 으로 표시되고 짧은 기간 동안만 사용 가능하고 곧 사용 종료됩니다.</p></details>
+      <details><summary>Mac · Linux 나 Windows 7 에서도 쓸 수 있나요?</summary><p>지금 평가판은 Windows 10 · 11 (64비트) PC 에서만 설치됩니다. Linux 판 tdoctor 는 정식 라이선스로 제공하니, Linux 에서 평가해 보고 싶으면 <a href="../contact/?product=tOps&amp;type=평가판·구매">문의</a>해 주세요.</p></details>
       <details><summary>Android 앱도 평가판이 있나요?</summary><p>이 평가판은 Windows PC 1대용이라 Android 앱은 들어 있지 않습니다. 정식 라이선스는 계정마다 PC 1대와 휴대폰 1대를 함께 쓸 수 있습니다. 평가 중에 휴대폰 화면도 보고 싶으면 문의해 주세요.</p></details>
       <details><summary>지우고 싶어요.</summary><p>Windows [설정] → [앱] 에서 tdoctor 와 tVault Agent 를 [제거]하거나, 알림 영역의 tdoctor 아이콘 메뉴에서 [tdoctor Uninstall] 을 고릅니다.</p></details>
       <details><summary>제 정보는 어떻게 쓰이나요?</summary><p>평가판 제공, 설치·기간 안내 메일, 문의 응대에만 쓰고 평가판이 끝나고 1년 뒤 지웁니다. 광고성 소식은 따로 동의한 경우에만 보내며 언제든 수신 거부할 수 있습니다. 자세한 내용은 <a href="../privacy/">개인정보 처리방침</a>을 봐 주세요.</p></details>
