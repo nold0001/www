@@ -52,7 +52,8 @@
         '연락처': f.phone.value,
         '이메일': f.email.value,
         '관심 제품': products,
-        '문의 내용': f.message.value
+        '문의 내용': f.message.value,
+        '개인정보 동의': f.consent && f.consent.checked ? '동의 (처리방침 2026-11-01 판)' : '-'
       },
       email: f.email.value,
       name: f.name.value
