@@ -359,6 +359,9 @@ code { font-family: var(--mono); font-size: .9em; }
 .phones { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; }
 .phone { margin: 0; width: 230px; }
 .phone img { width: 100%; height: auto; border-radius: 22px; border: 6px solid #142235; background: #142235; }
+.phone a { display: block; border-radius: 22px; transition: transform .2s; }
+.phone a:hover { transform: translateY(-2px); }
+.figure a { display: block; }
 .phone figcaption { font-size: 13px; color: var(--ink-3); margin-top: 12px; text-align: center; }
 .stat-row { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); }
 @media (min-width: 860px) { .stat-row { grid-template-columns: repeat(4, 1fr); } }
