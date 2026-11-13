@@ -466,3 +466,11 @@ html:lang(en) body { word-break: normal; }
 html:lang(en) h1, html:lang(en) h2, html:lang(en) h3 { letter-spacing: -0.01em; }
 /* 일본어 제목은 구절 단위로 줄바꿈(지원 브라우저만, 나머지는 글자 단위) */
 html:lang(ja) h1, html:lang(ja) h2, html:lang(ja) h3 { word-break: auto-phrase; }
+
+/* 2026-11-13: tOps PC·폰 사용권 그림 한 쌍, 홈 "셋을 함께 사용하면" 띠 */
+.seat-pair { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; justify-content: center; }
+.seat-pair .phone { width: 200px; }
+.seat-pair .shot { flex: 1 1 260px; max-width: 420px; margin: 0; }
+.trial-band.together .kicker { color: var(--brand-light); }
+.trial-band.together { background: radial-gradient(600px 300px at 100% 0, rgba(47, 120, 224, .28), transparent 60%), var(--navy-800); }
+@media (min-width: 860px) { .trial-band.together { grid-template-columns: 1fr; } }

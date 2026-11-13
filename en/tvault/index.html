@@ -42,9 +42,9 @@
       <a href="../tops/">tOps</a>
       <a href="../tvault/" aria-current="page">tVault</a>
       <a href="../#solutions">Applications</a>
-      <a href="../#packages">Packages</a>
+      <a href="../#together">Using them together</a>
       <a class="nav-trial" href="../trial/">Free trial</a>
-      <a class="btn btn-primary" href="../contact/">Contact</a>
+      <a href="../contact/">Contact</a>
       <!-- i18n:lang -->
 <details class="lang-menu">
         <summary><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span>English</span></summary>
@@ -68,13 +68,13 @@
         <div class="pair-box"><b>tVault agent</b> · Handles installation, updates and rollback on site servers (Linux) and operator PCs (Windows)</div>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" href="../contact/?product=tVault">Ask about tVault</a>
-        <a class="btn btn-ghost" href="#features">See features</a>
+        <a class="btn btn-primary" href="#features">See features</a>
+        <a class="btn btn-ghost" href="../contact/?product=tVault">Contact</a>
       </div>
     </div>
     <div>
       <figure class="shot">
-        <a href="../../assets/img/screens/tvault/group.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group.png" alt="tVault web console: customer tree on the left and customer overview (device and user counts, product version distribution, deployment approval requests)" width="1440" height="1000"></a>
+        <a href="../../assets/img/screens/tvault/group.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group.png" alt="tVault web console: customer tree on the left and customer overview (device and user counts, product version distribution, deployment approval requests)" width="1440" height="1500"></a>
         <figcaption>Actual tVault web console screen · demo data · customer overview</figcaption>
       </figure>
     </div>
@@ -142,7 +142,7 @@
     <div class="feature">
       <div class="feature-text">
         <div class="num">01</div>
-        <h3>Customer-centered web console <span class="newtag">NEW</span></h3>
+        <h3>Customer-centered web console</h3>
         <p>Pick a customer (group) in the tree on the left, and that customer's devices, users, entitlements, deployments and notes come together in tabs. Departments (subgroups) are included, which makes it easy to handle work customer by customer.</p>
         <ul class="checks">
           <li>Customer and department tree - collapse and expand, name search, device counts including subgroups</li>
@@ -152,7 +152,7 @@
         </ul>
       </div>
       <figure class="shot">
-        <a href="../../assets/img/screens/tvault/group-devices.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-devices.png" alt="Customer devices tab: host name per department, IP, device name, installed products and versions, last contact" width="1440" height="900" loading="lazy"></a>
+        <a href="../../assets/img/screens/tvault/group-devices.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-devices.png" alt="Customer devices tab: host name per department, IP, device name, installed products and versions, last contact" width="1440" height="1171" loading="lazy"></a>
         <figcaption>Customer devices tab · sorted by department and host name, with IP and installed version</figcaption>
       </figure>
     </div>
@@ -160,7 +160,7 @@
     <div class="feature rev">
       <div class="feature-text">
         <div class="num">02</div>
-        <h3>Selective deployment - rings (deployment stages) <span class="newtag">NEW</span></h3>
+        <h3>Selective deployment - rings (deployment stages)</h3>
         <p>Set a default behavior per product. With <b>Hold</b>, only devices assigned to a ring update; with <b>Follow</b>, devices follow new versions immediately. Each ring targets customers, departments, users or devices, with a target version and a method (automatic / customer approval).</p>
         <ul class="checks">
           <li>The ring for the most specific target applies (device &gt; user &gt; department &gt; customer)</li>
@@ -171,7 +171,7 @@
         </ul>
       </div>
       <figure class="shot">
-        <a href="../../assets/img/screens/tvault/deploy-rings.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/deploy-rings.png" alt="Deployment screen: product default behavior, Ring 1 bronto lab (automatic), Ring 2 pilot (customer approval), Ring 3 customer production (customer approval) and target versions" width="1440" height="1400" loading="lazy"></a>
+        <a href="../../assets/img/screens/tvault/deploy-rings.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/deploy-rings.png" alt="Deployment screen: product default behavior, Ring 1 bronto lab (automatic), Ring 2 pilot (customer approval), Ring 3 customer production (customer approval) and target versions" width="1440" height="2400" loading="lazy"></a>
         <figcaption>Deployment screen · product default behavior and three rings</figcaption>
       </figure>
     </div>
@@ -179,7 +179,7 @@
     <div class="feature">
       <div class="feature-text">
         <div class="num">03</div>
-        <h3>Email approval by the customer's contact <span class="newtag">NEW</span></h3>
+        <h3>Email approval by the customer's contact</h3>
         <p>When a new version is set on a customer-approval ring, an email goes to the approver at that customer (or department). Without logging in, the contact opens the link, enters <b>the 6-digit confirmation code sent to that email</b>, then chooses devices and an installation time to approve or put on hold.</p>
         <ul class="checks">
           <li>Device table: grouped by department, with <b>host name · IP</b> · device name · current version</li>
@@ -198,7 +198,7 @@
     <div class="feature rev">
       <div class="feature-text">
         <div class="num">04</div>
-        <h3>Per-device results and result emails <span class="newtag">NEW</span></h3>
+        <h3>Per-device results and result emails</h3>
         <p>When all approved devices finish updating, a result email goes to the approver right away, listing previous → current version, result and <b>update time</b> for each device. If some devices are switched off, an interim report is sent after a set time (1 hour by default), and a final report follows when everything is done.</p>
         <ul class="checks">
           <li>Counts of completed, failed and in-progress devices, with failure details</li>
@@ -224,10 +224,11 @@
           <li>Windows: run, close, update and remove from the notification area icon</li>
           <li>User-chosen updates: now · later · skip (required versions cannot be skipped)</li>
           <li>Release notes are shown as-is in the notification</li>
+          <li>The agent's own updates also follow rings and customer approval - check on a few devices first, then widen</li>
         </ul>
       </div>
       <figure class="shot">
-        <a href="../../assets/img/screens/tvault/device.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/device.png" alt="Device details: host name, IP, connection IP, installation status (installation time, report time), entitlements actually applied" width="1440" height="1000" loading="lazy"></a>
+        <a href="../../assets/img/screens/tvault/device.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/device.png" alt="Device details: host name, IP, connection IP, installation status (installation time, report time), entitlements actually applied" width="1440" height="1500" loading="lazy"></a>
         <figcaption>Device details · host name, IP, installation time and entitlements actually applied</figcaption>
       </figure>
     </div>
@@ -246,7 +247,7 @@
         </ul>
       </div>
       <figure class="shot">
-        <a href="../../assets/img/screens/tvault/ents.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/ents.png" alt="Entitlements screen: grant fields (edition, updates, term, behavior on expiry) and entitlement list" width="1440" height="1000" loading="lazy"></a>
+        <a href="../../assets/img/screens/tvault/ents.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/ents.png" alt="Entitlements screen: grant fields (edition, updates, term, behavior on expiry) and entitlement list" width="1440" height="1534" loading="lazy"></a>
         <figcaption>Entitlements screen · edition, term and behavior on expiry</figcaption>
       </figure>
     </div>
@@ -254,7 +255,7 @@
     <div class="feature">
       <div class="feature-text">
         <div class="num">07</div>
-        <h3>Notes on every action · audit log <span class="newtag">NEW</span></h3>
+        <h3>Notes on every action · audit log</h3>
         <p>Actions that are hard to undo or affect customers, such as revocation, disabling devices, deployment targets and approving on someone's behalf, always require a note (reason, requester, contact details). The customer's Notes · History tab shows notes and action records at a glance.</p>
         <ul class="checks">
           <li>Customer notes - calls, visits and commitments</li>
@@ -263,7 +264,7 @@
         </ul>
       </div>
       <figure class="shot">
-        <a href="../../assets/img/screens/tvault/group-notes.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-notes.png" alt="Customer Notes · History tab: leave a note, and notes and action records scoped to the customer" width="1440" height="1000" loading="lazy"></a>
+        <a href="../../assets/img/screens/tvault/group-notes.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-notes.png" alt="Customer Notes · History tab: leave a note, and notes and action records scoped to the customer" width="1440" height="1200" loading="lazy"></a>
         <figcaption>Notes · History tab · records for customers, departments, users and devices in one place</figcaption>
       </figure>
     </div>
@@ -281,7 +282,7 @@
         </ul>
       </div>
       <figure class="shot">
-        <a href="../../assets/img/screens/tvault/approval-result.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/approval-result.png" alt="Approval request details in the admin screen: contact, decision, installation time, result summary and per-device results" width="1440" height="900" loading="lazy"></a>
+        <a href="../../assets/img/screens/tvault/approval-result.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/approval-result.png" alt="Approval request details in the admin screen: contact, decision, installation time, result summary and per-device results" width="1440" height="1076" loading="lazy"></a>
         <figcaption>Approval request details in the admin screen · who approved what, and when</figcaption>
       </figure>
     </div>
@@ -289,7 +290,7 @@
     <div class="feature">
       <div class="feature-text">
         <div class="num">09</div>
-        <h3>Internet trial · built-in mail <span class="newtag">NEW</span></h3>
+        <h3>Internet trial · built-in mail</h3>
         <p>A single [Free trial] button on your website takes visitors through application → email verification → automatic approval → a personal install key, with no human involved. The trial policy (edition, days) stands in for approval and is recorded in the audit log. The tVault server sends the emails itself, with no external service.</p>
         <ul class="checks">
           <li>An installer with the install key in its file name - customers just download and run it, on 1 PC within 7 days</li>
@@ -301,7 +302,7 @@
         <p style="margin-top:14px"><a href="../trial/" style="color:var(--brand-600);font-weight:700">See it yourself with the tdoctor trial →</a></p>
       </div>
       <figure class="shot">
-        <a href="../../assets/img/screens/tvault/trials.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/trials.png" alt="Trials screen: counts for all, unverified, active, ended, revoked and converted, quick filters, search conditions, application list, block list" width="1440" height="830" loading="lazy"></a>
+        <a href="../../assets/img/screens/tvault/trials.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/trials.png" alt="Trials screen: counts for all, unverified, active, ended, revoked and converted, quick filters, search conditions, application list, block list" width="1440" height="1100" loading="lazy"></a>
         <figcaption>Trials · application list and quick filters (fictitious applicants)</figcaption>
       </figure>
     </div>
@@ -309,20 +310,64 @@
     <div class="feature rev">
       <div class="feature-text">
         <div class="num">10</div>
-        <h3>Status table · two-person approval · admin tools <span class="newtag">NEW</span></h3>
+        <h3>Status table · two-person approval · admin tools</h3>
         <p>Expand customer → department → user → device in one table to see installed versions and update status (latest, pending, held, failed) per product. Actions that are hard to undo can be set, per group of actions, to require approval from another administrator.</p>
         <ul class="checks">
           <li>Status table: groups only · down to users · down to devices, the reason behind each cell's target, fix entitlements in place</li>
           <li>Two-person approval: trial and fixed-term entitlements, permanent deletion, audit log deletion, administrator accounts</li>
           <li>Group structure chart: drag to move (with subgroups) · rename · create many groups at once</li>
           <li>List → detail (read-only → [Edit]) screens, run CLI commands from the web, bulk deletion</li>
-          <li>Mobile app (APK) registration, signature check, version management and download from the web</li>
+          <li>Mobile app (APK) registration, signature check, version management and download from the web - the phone app checks for new versions and updates itself</li>
+          <li>Create install targets (installers per platform) on the product detail page · [Create install key] on the group detail page</li>
         </ul>
       </div>
       <figure class="shot">
-        <a href="../../assets/img/screens/tvault/overview.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/overview.png" alt="Status table: tdoctor, brontod and tvault-agent installed versions and status per group, user and device" width="1440" height="900" loading="lazy"></a>
+        <a href="../../assets/img/screens/tvault/overview.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/overview.png" alt="Status table: tdoctor, brontod and tvault-agent installed versions and status per group, user and device" width="1440" height="1300" loading="lazy"></a>
         <figcaption>Status table · versions and update status per customer, department and device</figcaption>
       </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <div class="num">11</div>
+        <h3>[Tasks] - today's work <span class="newtag">NEW</span></h3>
+        <p>Shows the work to be done - entitlement approvals, entitlements ending soon, trials, people leaving, product and agent updates, installation problems, unenrolled devices and devices not seen for a long time - as counts per task. Click a task and step screens take you from finding targets → selecting → entering → confirming → done.</p>
+        <ul class="checks">
+          <li>Pending counts refresh every 15 seconds in the menu and on the cards</li>
+          <li>Start new: add a group (customer) - entitlements · install key · deployment contacts in one go, add a user</li>
+          <li>[Seen] removes targets you will not handle now from the counts</li>
+          <li>Overdue approval requests and trials that have already ended are decided here too</li>
+          <li>[Do it with the CLI] at the bottom - the tvault commands that do the same work</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="../../assets/img/screens/tvault/tasks.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/tasks.png" alt="[Tasks] screen: pending counts per task - entitlement approval, entitlement extension, leaver processing, product updates, installation problems, unenrolled devices and more - and start-new tasks" width="1440" height="1076" loading="lazy"></a>
+        <figcaption>[Tasks] · pending counts per task, add groups and users</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature rev">
+      <div class="feature-text">
+        <div class="num">12</div>
+        <h3>Version pin · full freeze · planned date <span class="newtag">NEW</span></h3>
+        <p>Sites that have passed acceptance stay on their current version. A <b>version pin</b> keeps devices on one of the signed versions; a <b>full freeze</b> installs that version and then the device disconnects from the server. Licenses are judged by the device itself and keep working.</p>
+        <ul class="checks">
+          <li>The pinned version is chosen from the list of signed versions - if it is lower than the current one, it is marked "(낮춤)" (lower) and a rollback confirmation is required</li>
+          <li>Planned date: at 0:00 on that day, updates switch automatically to version pin or full freeze</li>
+          <li>Bundle files: bring a package and license as a single file to disconnected devices or closed networks, to patch or lift the freeze</li>
+          <li>Search the device list, status table and entitlement list by update state (target · version pin · full freeze · blocked)</li>
+        </ul>
+      </div>
+      <div style="display:grid;gap:16px">
+        <figure class="shot">
+          <a href="../../assets/img/screens/tvault/device-frozen.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/device-frozen.png" alt="Fully frozen device detail: effective entitlement (full freeze 1.4.2), disconnected from the server, create bundle file" width="1290" height="850" loading="lazy"></a>
+          <figcaption>Fully frozen device · disconnected, creating a bundle file</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="../../assets/img/screens/tvault/ent-pin.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/ent-pin.png" alt="Entitlement edit form: update, pinned version, lower version confirmation, planned date with the value and pinned version for that day" width="760" height="444" loading="lazy"></a>
+          <figcaption>Entitlement form · full freeze at 1.5.0 on the planned date</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
@@ -336,20 +381,20 @@
       <p>All are actual screens captured with demo data. Click to enlarge. The tVault web console is currently available in Korean.</p>
     </div>
     <div class="screen-grid">
-      <figure class="shot"><a href="../../assets/img/screens/tvault/dash.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/dash.png" alt="Status: pending approvals, device count, installation problems, entitlements ending soon, versions being deployed" width="1440" height="1000" loading="lazy"></a><figcaption>Status · installation problems and entitlements ending soon</figcaption></figure>
-      <figure class="shot"><a href="../../assets/img/screens/tvault/group-deploy.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-deploy.png" alt="Department deployment tab: approver emails, rings this department belongs to, approval requests" width="1440" height="900" loading="lazy"></a><figcaption>Department deployment tab · approvers and rings</figcaption></figure>
-      <figure class="shot"><a href="../../assets/img/screens/tvault/approval-proxy.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/approval-proxy.png" alt="Pending approval requests: administrator approves or holds on behalf, resend link, cancel" width="1440" height="900" loading="lazy"></a><figcaption>Approve on behalf · note required</figcaption></figure>
-      <figure class="shot"><a href="../../assets/img/screens/tvault/mail-view.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/mail-view.png" alt="First screen when the contact opens the email link: request details and getting a confirmation code" width="1200" height="900" loading="lazy"></a><figcaption>First screen when the contact opens the link · get a confirmation code</figcaption></figure>
+      <figure class="shot"><a href="../../assets/img/screens/tvault/dash.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/dash.png" alt="Status: pending approvals, device count, installation problems, entitlements ending soon, versions being deployed" width="1440" height="1300" loading="lazy"></a><figcaption>Status · installation problems and entitlements ending soon</figcaption></figure>
+      <figure class="shot"><a href="../../assets/img/screens/tvault/group-deploy.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-deploy.png" alt="Department deployment tab: approver emails, rings this department belongs to, approval requests" width="1440" height="1163" loading="lazy"></a><figcaption>Department deployment tab · approvers and rings</figcaption></figure>
+      <figure class="shot"><a href="../../assets/img/screens/tvault/approval-proxy.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/approval-proxy.png" alt="Pending approval requests: administrator approves or holds on behalf, resend link, cancel" width="1440" height="1076" loading="lazy"></a><figcaption>Approve on behalf · note required</figcaption></figure>
+      <figure class="shot"><a href="../../assets/img/screens/tvault/mail-view.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/mail-view.png" alt="First screen when the contact opens the email link: request details and getting a confirmation code" width="1200" height="1006" loading="lazy"></a><figcaption>First screen when the contact opens the link · get a confirmation code</figcaption></figure>
       <figure class="shot"><a href="../../assets/img/screens/tvault/deploy-requests.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/deploy-requests.png" alt="Customer approval request list: approval unit, status, device count, result" width="1290" height="500" loading="lazy"></a><figcaption>Customer approval request list · also shows when there is no contact</figcaption></figure>
-      <figure class="shot"><a href="../../assets/img/screens/tvault/settings.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/settings.png" alt="Settings: result emails (interim report, approval deadline, reminders, administrator notification address) and approval method (two-person approval)" width="1440" height="700" loading="lazy"></a><figcaption>Settings · result emails and two-person approval</figcaption></figure>
+      <figure class="shot"><a href="../../assets/img/screens/tvault/settings.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/settings.png" alt="Settings: result emails (interim report, approval deadline, reminders, administrator notification address) and approval method (two-person approval)" width="1440" height="900" loading="lazy"></a><figcaption>Settings · result emails and two-person approval</figcaption></figure>
     </div>
     <div class="section-head" style="margin:56px 0 28px">
       <h2 style="font-size:24px">On your phone too</h2>
       <p>The web console and approval screens fit phone screens. The web console can be <b>installed as an app on the home screen</b> (PWA), and approval requests, deployment holds, new trials and installation failures arrive instantly as <b>push notifications</b>. Approve and check results even on a business trip.</p>
     </div>
     <div class="phones">
-      <figure class="phone"><img src="../../assets/img/screens/tvault/phone-approve.png" alt="Approval result screen opened on a phone" width="390" height="844" loading="lazy"><figcaption>Contact approval screen</figcaption></figure>
-      <figure class="phone"><img src="../../assets/img/screens/tvault/phone-group.png" alt="Customer overview viewed on a phone" width="390" height="844" loading="lazy"><figcaption>Admin web console · customer overview</figcaption></figure>
+      <figure class="phone"><img src="../../assets/img/screens/tvault/phone-approve.png" alt="Approval result screen opened on a phone" width="390" height="1763" loading="lazy"><figcaption>Contact approval screen</figcaption></figure>
+      <figure class="phone"><img src="../../assets/img/screens/tvault/phone-group.png" alt="Customer overview viewed on a phone" width="390" height="1600" loading="lazy"><figcaption>Admin web console · customer overview</figcaption></figure>
     </div>
   </div>
 </section>
@@ -363,15 +408,15 @@
     </div>
     <table class="spec">
       <tr><th>tVault server</th><td>Linux · PostgreSQL (default) or SQLite (small deliveries) · packages in file storage · built-in mail sending (DKIM signed)</td></tr>
-      <tr><th>Agent</th><td>Windows (service + notification area icon) · Linux x64 · ARM64 (systemd) · the agent updates itself too</td></tr>
-      <tr><th>Web console</th><td>Customer tree and tabs, status table, deployments, approvals, entitlements, devices, trials, mail and audit log · two-person approval · command execution · password + OTP two-step authentication · install as an app on your phone (PWA) · push notifications</td></tr>
+      <tr><th>Agent</th><td>Windows (service + notification area icon) · Linux x64 · ARM64 (systemd) · the agent updates itself following rings · with a full freeze it disconnects and changes only through bundle files</td></tr>
+      <tr><th>Web console</th><td>[Tasks] (pending counts, step screens), customer tree and tabs, status table, deployments, approvals, entitlements, devices, trials, mail and audit log · two-person approval · command execution · password + OTP two-step authentication · install as an app on your phone (PWA) · push notifications</td></tr>
       <tr><th>CLI</th><td>Tasks that need signing keys - building packages, release (signing), root key rotation, bundle import - are CLI only</td></tr>
-      <tr><th>Deployment</th><td>Default behavior per product (Hold · Follow) · rings (targets, target version, automatic/customer approval, pause) · signed per-device deployment orders · download enforcement on the server</td></tr>
+      <tr><th>Deployment</th><td>Default behavior per product (Hold · Follow) · rings (targets, target version, automatic/customer approval, pause) · version pin · full freeze · planned date · signed per-device deployment orders · download enforcement on the server · device bundle files</td></tr>
       <tr><th>Customer approval</th><td>Email link per contact · 6-digit confirmation code · per-device selection (host name, IP) · installation time · result emails (interim, final)</td></tr>
       <tr><th>Licensing</th><td>Editions, features and roles · perpetual, subscription, fixed term, trial · expiry behavior · offline grace period · PC-specific value · revocation list</td></tr>
       <tr><th>Installation path</th><td>Install key link → run installer → registration, service, first installation · signed bundle files for air-gapped networks</td></tr>
       <tr><th>Internet trial</th><td>Public application screen · email verification · automatic approval by policy · personal install key (1 PC) · repeat application blocking · ending notice emails · conversion to full license and revocation</td></tr>
-      <tr><th>Mobile app</th><td>Android APK registration, signature (v2, v3) check, version management and web download · the app registers with an install key for a phone-only license</td></tr>
+      <tr><th>Mobile app</th><td>Android APK registration, signature (v2, v3) check, version management and web download · the app registers with an install key for a phone-only license · the app checks for and downloads its own updates</td></tr>
       <tr><th>Works with</th><td>Deployment of tOps (brontod · tdoctor) and tdoctor Basic/Pro licenses · can also be delivered on the customer's own servers</td></tr>
     </table>
   </div>
@@ -399,8 +444,8 @@
   <div class="wrap">
     <div class="cta">
       <div>
-        <h2>Deployment and licensing, now in one place</h2>
-        <p>Tell us how many sites you have and how you operate them, and we will walk you through the workflow on real screens.</p>
+        <h2>Deployment and licensing in one place</h2>
+        <p>Tell us how many sites you have and how you operate them, and we will show you how it is used on real screens.</p>
       </div>
       <div class="actions">
         <a class="btn btn-primary" href="../contact/?product=tVault">Contact</a>
@@ -425,7 +470,7 @@
           <li><a href="../tems/">tems</a></li>
           <li><a href="../tops/">tOps</a></li>
           <li><a href="../tvault/">tVault</a></li>
-          <li><a href="../#packages">Packages</a></li>
+          <li><a href="../#together">Using them together</a></li>
           <li><a href="../trial/">tdoctor free trial</a></li>
         </ul>
       </div>

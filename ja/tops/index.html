@@ -41,9 +41,9 @@
       <a href="../tops/" aria-current="page">tOps</a>
       <a href="../tvault/">tVault</a>
       <a href="../#solutions">適用分野</a>
-      <a href="../#packages">導入構成</a>
+      <a href="../#together">組み合わせて使う</a>
       <a class="nav-trial" href="../trial/">無料トライアル</a>
-      <a class="btn btn-primary" href="../contact/">お問い合わせ</a>
+      <a href="../contact/">お問い合わせ</a>
       <!-- i18n:lang -->
 <details class="lang-menu">
         <summary><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span>日本語</span></summary>
@@ -61,14 +61,13 @@
     <div>
       <span class="eyebrow">OPERATIONS</span>
       <h1>tOps</h1>
-      <p class="lead" style="margin-bottom:12px"><b style="color:#fff">tems サーバーをリモートで運用するツール。</b><br>複数の現場をひとつの画面で監視し、現場に行かなくても再起動 · 設定の点検と変更 · 配布まで行えます。スマートフォン(Android)とオフライン作業にも対応しました。</p>
+      <p class="lead" style="margin-bottom:12px"><b style="color:#fff">tems サーバーをリモートで運用するツール。</b><br>複数の現場をひとつの画面で監視し、現場に行かなくても再起動 · 設定の点検と変更 · 配布まで行えます。スマートフォン(Android)とオフライン作業にも対応しています。</p>
       <div class="pair" style="display:grid;gap:10px;margin:24px 0 28px;max-width:30em">
         <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;color:#d6e0ec"><b style="color:#fff">brontod</b> · tems サーバーにインストールする運用デーモン。状態の収集、コマンドの実行、権限の検証を担います。</div>
         <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;color:#d6e0ec"><b style="color:#fff">tdoctor</b> · 運用者 PC の管理画面。複数の brontod に接続し、一か所で運用します。</div>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" href="../contact/?product=tOps">tOps のお問い合わせ</a>
-        <a class="btn btn-amber" href="../trial/">tdoctor 14日間無料トライアル</a>
+        <a class="btn btn-amber" href="../trial/">tdoctor を14日間無料で使ってみる</a>
         <a class="btn btn-ghost" href="#features">機能を見る</a>
       </div>
     </div>
@@ -121,7 +120,7 @@
     <div class="feature rev">
       <div class="feature-text">
         <div class="num">02</div>
-        <h3>tems 環境チェック <span class="newtag">NEW</span></h3>
+        <h3>tems 環境チェック</h3>
         <p>tems の環境設定を temsconfig.xml からつながるすべてのファイル(XML・.conf)まで一度に点検します。tems が設定を無視したり起動・制御に失敗したりする問題(エラー)、動作はするが意図と異なる可能性があるもの(警告)、参考(情報)に分けてお知らせします。</p>
         <ul class="checks">
           <li>プロセス一覧 → 環境ファイル → 接続ファイル → データマップ → 機器 → スレーブマップの6段階</li>
@@ -157,7 +156,7 @@
     <div class="feature rev">
       <div class="feature-text">
         <div class="num">04</div>
-        <h3>オフラインモード <span class="newtag">NEW</span></h3>
+        <h3>オフラインモード</h3>
         <p>サーバー(brontod)に接続せずに、PC 上の tems 設定フォルダーを直接開いて編集・点検します。現場に出向く前にオフィスで設定を準備したり、インターネットが使えない場所で作業したりするときに使います。</p>
         <ul class="checks">
           <li>接続画面の [オフラインで開く…] または起動オプションでローカル作業フォルダーを指定</li>
@@ -175,17 +174,18 @@
     <div class="feature">
       <div class="feature-text">
         <div class="num">05</div>
-        <h3>プロセス制御</h3>
-        <p>tems の各プロセスの状態をリアルタイムで確認し、起動 · 停止 · 再起動をリモートで実行します。</p>
+        <h3>プロセス制御 · tems データ表 <span class="newtag">NEW</span></h3>
+        <p>tems の各プロセスの状態をリアルタイムで確認し、起動 · 停止 · 再起動をリモートで実行します。tems モニタリングの表(tpool・収集・履歴データ)は、必要な行だけを選んでコピーしたりファイルに保存したりして、そのまま報告書に使えます。</p>
         <ul class="checks">
           <li>プロセスごとの実行状態 · Copy No · リソース使用量</li>
-          <li>起動 · 停止 · 再起動をリモート実行</li>
-          <li>制御権限の要求・承認で同時操作を防止</li>
+          <li>起動 · 停止 · 再起動をリモート実行、制御権限の要求・承認で同時操作を防止</li>
+          <li>表のコピー · 保存: 全体または選んだ行、カンマ(CSV) · タブ · セミコロン · 列揃え</li>
+          <li>更新しても、選んだ複数行(Ctrl-クリック)とスクロール位置はそのまま</li>
         </ul>
       </div>
       <figure class="shot">
-        <a href="../../assets/img/i18n/ja/screens/monitoring.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/monitoring.png" alt="tems プロセスと機器・スレーブ通信状態の実際の画面" width="1440" height="900" loading="lazy"></a>
-        <figcaption>tdoctor 実際の画面 · デモサーバー · tems モニタリング</figcaption>
+        <a href="../../assets/img/i18n/ja/screens/tops2/table-save.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/tops2/table-save.png" alt="tems モニタリングの tpool 表で3行を選び、保存範囲と列の区切りを決めるウィンドウ" width="960" height="600" loading="lazy"></a>
+        <figcaption>tdoctor 実際の画面 · デモサーバー · 表の保存(選んだ3行、CSV)</figcaption>
       </figure>
     </div>
 
@@ -246,7 +246,7 @@
     <div class="feature">
       <div class="feature-text">
         <div class="num">09</div>
-        <h3>tVault と連携 - 配布・ライセンス <span class="newtag">NEW</span></h3>
+        <h3>tVault と連携 - 配布・ライセンス</h3>
         <p>tdoctor と brontod は tVault でインストール・更新します。顧客サーバーの brontod は、顧客の担当者が承認した機器だけが指定した時刻に更新されます。tdoctor は tVault のライセンスで Basic · Pro を区別します。</p>
         <ul class="checks">
           <li>インストーラーひとつで tdoctor のインストール · スタートメニュー · 通知領域アイコン</li>
@@ -258,7 +258,7 @@
         <p style="margin-top:14px"><a href="../tvault/" style="color:var(--brand-600);font-weight:700">tVault について →</a></p>
       </div>
       <figure class="shot">
-        <a href="../../assets/img/screens/tvault/group-devices.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-devices.png" alt="tVault Web コンソールの顧客機器一覧: brontod・tdoctor バージョン" width="1440" height="900" loading="lazy"></a>
+        <a href="../../assets/img/screens/tvault/group-devices.png" target="_blank" rel="noopener"><img src="../../assets/img/screens/tvault/group-devices.png" alt="tVault Web コンソールの顧客機器一覧: brontod・tdoctor バージョン" width="1440" height="1171" loading="lazy"></a>
         <figcaption>tVault Web コンソール · 顧客機器の brontod・tdoctor バージョン</figcaption>
       </figure>
     </div>
@@ -268,7 +268,7 @@
 <section class="section soft">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker">MOBILE <span class="newtag">NEW</span></div>
+      <div class="kicker">MOBILE</div>
       <h2>スマートフォンでも - tdoctor Android アプリ</h2>
       <p>PC の tdoctor で行っていた作業のほとんどをスマートフォンで行えます。ダッシュボード・システムグラフ・グループ状態ボード、プロセスの起動・停止、サーバー作業とコマンド実行、サーバーファイルの表示・ダウンロード・アップロード、tems データ(tpool・履歴・収集)、新しいファイルの配布、環境チェックと設定原文の編集、チャットルームの作成・招待、監査ログまで。tems の故障・警報とチャットは、<b>アプリを閉じても · 画面が消えていても · 再起動したあとでも</b>スマートフォンに通知が届きます。</p>
     </div>
@@ -278,10 +278,27 @@
       <figure class="phone"><img src="../../assets/img/i18n/ja/screens/tops2/m-exec_tasks.png" alt="Android アプリのサーバー作業" width="400" height="800" loading="lazy"><figcaption>サーバー作業</figcaption></figure>
       <figure class="phone"><img src="../../assets/img/i18n/ja/screens/tops2/m-config_check.png" alt="Android アプリの環境チェック結果" width="400" height="800" loading="lazy"><figcaption>環境チェック</figcaption></figure>
     </div>
+    <div class="feature" style="margin-top:40px">
+      <div class="feature-text">
+        <div class="num">PC · スマホ <span class="newtag">NEW</span></div>
+        <h3>ひとつのアカウントで PC とスマホを行き来</h3>
+        <p>ひとつのアカウントは、同時に一か所(PC またはスマホ)でログインします。事務所の PC で使っていたアカウントで現場からスマホを開くと PC に要求が届き、PC で [譲ってログアウト] を押すとスマホがすぐに引き継ぎます。</p>
+        <ul class="checks">
+          <li>要求にメッセージを添え、相手と短くやりとり</li>
+          <li>相手が1分間応答しないか接続が切れていれば [取得]</li>
+          <li>使用権を譲っても、スマホの通知(故障・警報・チャット)は引き続き届く</li>
+          <li>スマホアプリは tVault で新しいバージョンを確認し、自ら更新</li>
+        </ul>
+      </div>
+      <div class="seat-pair">
+        <figure class="phone"><img src="../../assets/img/i18n/ja/screens/tops2/m-seat.png" alt="Android アプリの使用権要求画面: 使用中の PC、送ったメッセージ、返事を待つ残り時間" width="400" height="800" loading="lazy"><figcaption>スマホ · 使用権の要求</figcaption></figure>
+        <figure class="shot"><a href="../../assets/img/i18n/ja/screens/tops2/seat-pc.png" target="_blank" rel="noopener"><img src="../../assets/img/i18n/ja/screens/tops2/seat-pc.png" alt="PC の tdoctor に表示された要求ウィンドウ: スマホからログアウトを要求され、譲るか拒否するかを選ぶ" width="500" height="294" loading="lazy"></a><figcaption>PC · 届いた要求</figcaption></figure>
+      </div>
+    </div>
     <div class="grid grid-3" style="margin-top:48px">
       <div class="card"><h3>PC · tdoctor</h3><p>Windows · Linux の運用者 PC ですべての機能を使えます。韓国語・英語・日本語・中国語の画面、言語ごとの等幅フォントを同梱。</p></div>
       <div class="card"><h3>サーバー · brontod</h3><p>tems が動作する x64 · ARM64 Linux サーバーと組込みコントローラーにインストールします。システムリソースを1秒ごとに収集し60分保持します。</p></div>
-      <div class="card"><h3>モバイル · Android</h3><p>韓国語・英語・日本語・中国語の画面、PC と同じサーバーテーマ・マーカー。パスワードは Android Keystore で暗号化して保存し、自動ログインします。ライセンスはアプリが tVault に直接登録して取得し、アカウントごとに PC 1台 + スマートフォン1台を使えます。</p></div>
+      <div class="card"><h3>モバイル · Android</h3><p>韓国語・英語・日本語・中国語の画面、PC と同じサーバーテーマ・マーカー。パスワードは Android Keystore で暗号化して保存し、自動ログインします。ライセンスはアプリが tVault に直接登録して取得し、新しいバージョンも tVault から受け取って自ら更新します。ひとつのアカウントは PC・スマホを合わせて一か所でログインします。</p></div>
     </div>
   </div>
 </section>
@@ -289,12 +306,12 @@
 <section class="section">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker">PACKAGE</div>
-      <h2>単体で、または tems と一緒に</h2>
+      <div class="kicker">TOGETHER</div>
+      <h2>tOps 単体で、または tems と一緒に</h2>
     </div>
     <div class="duo">
       <div class="card">
-        <h3>tOps 単体</h3>
+        <h3>tOps だけを使うとき</h3>
         <ul class="checks">
           <li>すでに tems サーバーを運用している場合</li>
           <li>複数現場の運用業務を一か所に集めたいとき</li>
@@ -302,11 +319,11 @@
         </ul>
       </div>
       <div class="card with">
-        <h3>tems + tOps <span class="pill run" style="font-size:12px">おすすめ</span></h3>
+        <h3>tems と一緒に使うとき</h3>
         <ul class="checks">
-          <li>新しい現場を制御から運用までまとめて構築</li>
+          <li>新しい現場を制御から運用までまとめて整えるとき</li>
           <li>tems の設定体系に合わせた検証付き編集画面</li>
-          <li>導入 · 運用のひとつのサポート窓口</li>
+          <li>使用中の疑問はひとつの窓口でお答えします</li>
         </ul>
         <p style="margin-top:14px"><a href="../tems/" style="color:var(--brand-600);font-weight:700">tems について →</a></p>
       </div>
@@ -319,11 +336,11 @@
     <div class="cta">
       <div>
         <h2>tOps を実際に使ってみてください</h2>
-        <p>tdoctor を14日間、Pro の全機能で無料でお試しください。テストサーバーや画面デモが必要な場合はお問い合わせください。</p>
+        <p>tdoctor を14日間、Pro の全機能で無料で使ってみてください。テストサーバーや画面デモが必要な場合はお問い合わせください。</p>
       </div>
       <div class="actions">
         <a class="btn btn-amber" href="https://update.ess.center/trial?product=tdoctor&amp;src=bronto">無料トライアルを申し込む</a>
-        <a class="btn btn-primary" href="../contact/?product=tOps">お問い合わせ</a>
+        <a class="btn btn-ghost" href="../contact/?product=tOps">お問い合わせ</a>
         <a class="btn btn-ghost" href="mailto:contact@bronto.co.kr">contact@bronto.co.kr</a>
       </div>
     </div>
@@ -345,7 +362,7 @@
           <li><a href="../tems/">tems</a></li>
           <li><a href="../tops/">tOps</a></li>
           <li><a href="../tvault/">tVault</a></li>
-          <li><a href="../#packages">導入構成</a></li>
+          <li><a href="../#together">組み合わせて使う</a></li>
           <li><a href="../trial/">tdoctor 無料トライアル</a></li>
         </ul>
       </div>
